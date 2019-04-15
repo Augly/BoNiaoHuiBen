@@ -1,0 +1,55 @@
+<!-- 产品图组件 -->
+<view class="head_group" hover-class="none" hover-stop-propagation="false"></view>
+<!-- 产品描述 -->
+<view class="product_detail" hover-class="none" hover-stop-propagation="false">
+    <view class="product_title" hover-class="none" hover-stop-propagation="false">
+        <view class="product_title" hover-class="none" hover-stop-propagation="false">
+            南瓜汤 1998格林纳威金奖
+        </view>
+        <view class="product_mintitle" hover-class="none" hover-stop-propagation="false">
+            作者：
+            <text class="other" selectable="false" space="false" decode="false">(英) 库柏</text>
+        </view>
+        <view class="product_adder" hover-class="none" hover-stop-propagation="false">
+            出版社：明天出版社
+        </view>
+        <view class="product_tab" hover-class="none" hover-stop-propagation="false">
+            <text class="tab" selectable="false" space="false" decode="false">3-6岁</text>
+        </view>
+    </view>
+</view>
+<!-- 产品简介 -->
+<view class="introduction" hover-class="none" hover-stop-propagation="false"></view>
+<!-- 用户评论 -->
+<view class="comment_wrap" hover-class="none" hover-stop-propagation="false">
+    <view class="comment_head" hover-class="none" hover-stop-propagation="false">
+        <view class="comment_head_title" selectable="false" space="false" decode="false">
+            用户评价（725）
+        </view>
+        <view class="comment_head_more" hover-class="none" hover-stop-propagation="false">
+            查看全部
+        </view>
+    </view>
+    <block>
+        <view class="comment_list" hover-class="none" hover-stop-propagation="false">
+            <view class="comment_list_head" hover-class="none" hover-stop-propagation="false">
+                <image class="comment_list_head_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+                <view class="comment_list_head_userName" selectable="false" space="false" decode="false">
+                    用户001
+                </view>
+                <view class="comment_list_head_date" selectable="false" space="false" decode="false">
+                    2019-04-12
+                </view>
+            </view>
+            <view class="comment_list_content" hover-class="none" hover-stop-propagation="false">
+                用户暂无评论
+            </view>
+        </view>
+    </block>
+</view>
+<!-- 操作区 -->
+<view class="scope_wrap" hover-class="none" hover-stop-propagation="false">
+    <view class="item_left" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_left" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_right" hover-class="none" hover-stop-propagation="false"></view>
+</view>
