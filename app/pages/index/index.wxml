@@ -1,0 +1,189 @@
+<!-- 搜索组件 -->
+<view class="search_group">
+  <view class="search_box" hover-class="none" hover-stop-propagation="false"></view>
+</view>
+<!-- 轮播图组件 -->
+<view class='banner'>
+  <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image class="slide-image" src="{{item}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- tab组件 -->
+<view class="tab_group" hover-class="none" hover-stop-propagation="false">
+  <block wx:for="{{tabList}}" wx:for-item="item">
+    <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+      <view class="tab_banner" hover-class="none" hover-stop-propagation="false" style="background:{{item.banner_color}}"></view>
+      <text class="tab_title" selectable="false" space="false" decode="false">{{item.title}}</text>
+    </view>
+  </block>
+</view>
+<!-- 福利板块 -->
+<view class="wel_fare" hover-class="none" hover-stop-propagation="false"></view>
+<!-- 专区板块 -->
+<view class="plate_wrap" hover-class="none" hover-stop-propagation="false">
+  <view class="plate_item" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="plate_item" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="plate_item" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="plate_item" hover-class="none" hover-stop-propagation="false"></view>
+</view>
+<!-- 点读专区 -->
+<view class="reading_area" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">点读专区</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="reading_group" hover-class="none" hover-stop-propagation="false">
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+  </view>
+</view>
+<!-- 年龄专区 -->
+<view class="Age_zone" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">年龄专区</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="Age_group" hover-class="none" hover-stop-propagation="false">
+    <view class="age_group_item" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="age_group_item" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="age_group_item" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="age_group_item" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+</view>
+<!-- 特色人物 -->
+<view class="special_characters" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">特色人物</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="special_group" hover-class="none" hover-stop-propagation="false">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo br50" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo br50" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo br50" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+  </view>
+</view>
+<!-- 名家大师 -->
+<view class="special_characters" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">名家大师</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="special_group" hover-class="none" hover-stop-propagation="false">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+  </view>
+</view>
+<!-- 名品馆 -->
+<view class="special_characters" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">名品馆</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="special_group" hover-class="none" hover-stop-propagation="false">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+    <view class="special_item" hover-class="none" hover-stop-propagation="false">
+      <image class="special_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <text class="special_item_title" selectable="false" space="false" decode="false">小猪佩奇</text>
+    </view>
+  </view>
+</view>
+<!-- 名人书单 -->
+<view class="book_list" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">名人书单</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="book_group" hover-class="none" hover-stop-propagation="false">
+    <view class="book_item" hover-class="none" hover-stop-propagation="false">
+      <image class="book_item_logo br50" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="book_item_res" hover-class="none" hover-stop-propagation="false">
+        <view class="book_title" selectable="false" space="false" decode="false">吴敏兰</view>
+        <view class="book_mintitle" hover-class="none" hover-stop-propagation="false">书单</view>
+      </view>
+    </view>
+    <view class="book_item" hover-class="none" hover-stop-propagation="false">
+      <image class="book_item_logo br50" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="book_item_res" hover-class="none" hover-stop-propagation="false">
+        <view class="book_title" selectable="false" space="false" decode="false">吴敏兰</view>
+        <view class="book_mintitle" hover-class="none" hover-stop-propagation="false">书单</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 点读专区 -->
+<view class="reading_area" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">全球儿童图书大奖清单</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="reading_group" hover-class="none" hover-stop-propagation="false">
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+    <view class="read_item" hover-class="none" hover-stop-propagation="false">
+      <image class="read_item_logo" src="" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
+      <view class="read_item_more" hover-class="none" hover-stop-propagation="false">更多</view>
+    </view>
+  </view>
+</view>
+<view class="hot_zoom" hover-class="none" hover-stop-propagation="false">
+  <view class="title_group" hover-class="none" hover-stop-propagation="false">
+    <text class="title" selectable="false" space="false" decode="false">热门推荐</text>
+    <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
+  </view>
+  <view class="hot_group" hover-class="none" hover-stop-propagation="false">
+    <view class="hot_list" hover-class="none" hover-stop-propagation="false">
+      <image class="hot_list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="hot_list_res" hover-class="none" hover-stop-propagation="false"></view>
+      <view class="hot_list_label" hover-class="none" hover-stop-propagation="false">
+        <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+        <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+      </view>
+    </view>
+  </view>
+</view>

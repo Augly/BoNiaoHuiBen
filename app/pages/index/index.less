@@ -1,0 +1,310 @@
+@flex_center: {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+};
+@box: {
+  box-sizing: border-box;
+};
+@bor_20: {
+  border-top: 20rpx solid RGBA(240, 242, 245, 1);
+};
+.bg_color(@color) {
+  background-color: @color;
+}
+.br_rds(@Degrees) {
+  border-radius: @Degrees;
+}
+.wh(@h) {
+  width: @h;
+  height: @h;
+}
+/*搜索组件样式*/
+.search_group {
+  width: 100%;
+  height: 88rpx;
+  background-color: RGBA(239, 239, 244, 1);
+  @flex_center();
+  @box();
+  padding: 0rpx 20rpx;
+  .search_box {
+    width: 100%;
+    height: 60rpx;
+    .br_rds(60rpx);
+    .bg_color(white);
+  }
+}
+
+/*轮播图样式*/
+.banner {
+  width: 100%;
+  height: 100%;
+  & .slide-image {
+    width: 100%;
+    height: 300rpx;
+  }
+}
+/*tab组件*/
+.tab_group {
+  width: 100%;
+  overflow: hidden;
+  & .tab_item {
+    width: 25%;
+    height: 180rpx;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .tab_banner {
+      .wh(88rpx);
+      .br_rds(50%);
+    }
+    & .tab_title {
+      font-size: 24rpx;
+      margin-top: 15rpx;
+    }
+  }
+}
+/*福利板块*/
+.wel_fare {
+  width: 100%;
+  height: 198rpx;
+  @bor_20();
+}
+
+/*板块*/
+.plate_wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .bg_color(RGBA(240, 242, 245, 1));
+  @bor_20();
+  .plate_item {
+    width: 374rpx;
+    height: 164rpx;
+    border-top: 2rpx solid RGBA(240, 242, 245, 1);
+    .bg_color(white);
+  }
+}
+.title_group {
+  width: 100%;
+  height: 92rpx;
+  @bor_20();
+  @box();
+  padding: 0rpx 21rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid RGBA(240, 242, 245, 1);
+  &:before {
+    position: absolute;
+    content: '';
+    width: 8rpx;
+    height: 30rpx;
+    background: rgba(68, 138, 202, 1);
+    border-radius: 4rpx;
+  }
+  .title {
+    font-size: 36rpx;
+    font-weight: 500;
+    color: rgba(68, 138, 202, 1);
+    margin-left: 20rpx;
+  }
+  .more {
+    font-size: 30rpx;
+    font-family: SourceHanSansCN-Regular;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    margin-left: auto;
+  }
+}
+/*点读专区*/
+.reading_area {
+  width: 100%;
+  height: auto;
+  .reading_group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .bg_color(RGBA(240, 242, 245, 1));
+    .read_item {
+      width: 374rpx;
+      height: 200rpx;
+      @box();
+      padding: 27rpx;
+      .bg_color(white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 2rpx solid RGBA(240, 242, 245, 1);
+      .read_item_logo {
+        width: 122rpx;
+        height: 122rpx;
+        .bg_color(red);
+      }
+      .read_item_more {
+        width: 180rpx;
+        font-size: 30rpx;
+        font-weight: 400;
+        text-align: right;
+        color: rgba(51, 51, 51, 1);
+      }
+    }
+  }
+}
+
+/*年龄专区*/
+.Age_zone {
+  width: 100%;
+  height: auto;
+  .Age_group {
+    width: 100%;
+    height: 140rpx;
+    @box();
+    padding: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .age_group_item {
+      width: 170rpx;
+      height: 100rpx;
+      .br_rds(5rpx);
+      .bg_color(red);
+    }
+  }
+}
+.br50 {
+  .br_rds(50%);
+}
+/*特色人物*/
+.special_characters {
+  width: 100%;
+  height: auto;
+  .special_group {
+    width: 100%;
+    height: 270rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .special_item {
+      width: 158rpx;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // padding: 0 51rpx;
+      .special_item_logo {
+        display: block;
+        .wh(158rpx);
+
+        .bg_color(red);
+      }
+      .special_item_title {
+        font-size: 26rpx;
+        font-weight: 400;
+        color: rgba(38, 38, 38, 1);
+        margin-top: 20rpx;
+      }
+    }
+  }
+}
+
+/*名人书单*/
+.book_list {
+  width: 100;
+  height: auto;
+  .book_group {
+    width: 100%;
+    height: 200rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .book_item {
+      width: 372rpx;
+      height: 200rpx;
+      display: flex;
+      align-items: center;
+      .bg_color(rgba(68, 138, 202, 1));
+      .book_item_logo {
+        width: 108rpx;
+        height: 108rpx;
+        border: 5rpx solid rgba(159, 209, 255, 1);
+        margin-left: 58rpx;
+        .bg_color(red);
+      }
+      .book_item_res {
+        width: 170rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40rpx;
+        .book_title {
+          font-size: 36rpx;
+          color: rgba(255, 255, 255, 1);
+        }
+        .book_mintitle {
+          font-size: 28rpx;
+          color: rgba(255, 255, 255, 1);
+          margin-top: 5rpx;
+        }
+      }
+    }
+  }
+}
+
+.hot_zoom {
+  width: 100;
+  height: auto;
+  .hot_group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .hot_list {
+      width: 374rpx;
+      height: 500rpx;
+      @box();
+      padding: 20rpx;
+      border: 1rpx solid RGBA(239, 239, 244, 1);
+      border-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .hot_list_logo {
+        .wh(334rpx);
+        .bg_color(red);
+      }
+      .hot_list_res {
+        width: 294rpx;
+        height: 80rpx;
+        .bg_color(red);
+        margin-top: 10rpx;
+      }
+      .hot_list_label {
+        width: 294rpx;
+        height: 40rpx;
+        margin-top: 10rpx;
+        display: flex;
+        .label {
+          .bg_color(RGBA(238, 238, 238, 1));
+          line-height: 40rpx;
+          padding: 0rpx 10rpx;
+          .br_rds(10rpx);
+          font-size: 20rpx;
+          color: rgba(135, 135, 135, 1);
+          margin-right: 10rpx;
+        }
+      }
+    }
+  }
+}
