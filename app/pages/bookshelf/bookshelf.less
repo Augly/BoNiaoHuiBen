@@ -1,0 +1,144 @@
+@flex_center: {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+};
+
+@box: {
+  box-sizing: border-box;
+};
+
+@bor_20: {
+  border-top: 20rpx solid RGBA(240, 242, 245, 1);
+};
+page {
+  .bg_color(RGBA(239, 239, 244, 1));
+}
+.bg_color(@color) {
+  background-color: @color;
+}
+
+.br_rds(@Degrees) {
+  border-radius: @Degrees;
+}
+
+.wh(@h) {
+  width: @h;
+  height: @h;
+}
+/*提示框样式*/
+.tip_group {
+  width: 100%;
+  height: 85rpx;
+  .bg_color(RGBA(255, 255, 255, 1));
+  position: fixed;
+  top: 0;
+  @box();
+  padding: 20rpx 30rpx;
+  display: flex;
+  align-items: center;
+  .tip_icon {
+    .wh(16rpx);
+    .bg_color(RGBA(68, 138, 202, 1));
+    .br_rds(50%);
+  }
+  .tip_title {
+    font-size: 28rpx;
+    color: rgba(51, 51, 51, 1);
+    margin-left: 21rpx;
+  }
+  .tip_edit {
+    font-size: 30rpx;
+    color: rgba(68, 138, 202, 1);
+    margin-left: auto;
+  }
+}
+/*搜索组件样式*/
+.search_group {
+  width: 100%;
+  height: 88rpx;
+  background-color: RGBA(239, 239, 244, 1);
+  @flex_center();
+  @box();
+  padding: 0rpx 20rpx;
+  position: fixed;
+  top: 85rpx;
+  .search_box {
+    width: 100%;
+    height: 60rpx;
+    .br_rds(60rpx);
+    .bg_color(white);
+  }
+}
+.select {
+  .wh(40rpx);
+  .bg_color(red);
+}
+/*书架列表*/
+.book_wrap {
+  width: 100%;
+  height: auto;
+  padding-top: 176rpx;
+  padding-bottom: 88rpx;
+  .book_item {
+    width: 100%;
+    .bg_color(white);
+    border-bottom: 1rpx solid RGBA(239, 239, 244, 1);
+    @box();
+    padding: 20rpx 30rpx;
+    display: flex;
+    align-items: center;
+
+    .item_logo {
+      width: 130rpx;
+      height: 134rpx;
+      .bg_color(yellow);
+      margin-left: 30rpx;
+    }
+    .item_res {
+      width: 400rpx;
+      height: 134rpx;
+      .bg_color(blue);
+      margin-left: 20rpx;
+      font-size: 26rpx;
+      color: rgba(87, 87, 87, 1);
+    }
+    .cha {
+      .wh(18rpx);
+      .bg_color(black);
+      margin-left: auto;
+    }
+  }
+}
+
+/*底部全选*/
+.all_select {
+  width: 100%;
+  height: 88rpx;
+  .bg_color(white);
+  position: fixed;
+  bottom: 0;
+  @box();
+  padding: 20rpx 0rpx 20rpx 30rpx;
+  display: flex;
+  align-items: center;
+  .title {
+    font-size: 32rpx;
+    color: rgba(51, 51, 51, 1);
+    margin-left: 30rpx;
+  }
+  .number {
+    .title;
+    margin-left: auto;
+    margin-right: 20rpx;
+  }
+  .sure {
+    width: 180rpx;
+    height: 87rpx;
+    font-size: 32rpx;
+    .bg_color(RGBA(68, 138, 202, 1));
+    text-align: center;
+    line-height: 87rpx;
+    color: rgba(255, 255, 255, 1);
+  }
+}

@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/reading_circle/reading_circle",
+    "pages/bookshelf/bookshelf",
     "pages/details/details",
     "pages/books_select/books_select",
     "pages/my/my",

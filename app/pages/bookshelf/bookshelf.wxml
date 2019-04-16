@@ -1,0 +1,80 @@
+<!-- tip组件 -->
+<view class="tip_group" hover-class="none" hover-stop-propagation="false">
+  <view class="tip_icon" hover-class="none" hover-stop-propagation="false"></view>
+  <text class="tip_title" selectable="false" space="false" decode="false">每次最多不超过10件</text>
+  <text class="tip_edit" selectable="false" space="false" decode="false">编辑</text>
+</view>
+<!-- 搜索组件 -->
+<view class="search_group">
+  <view class="search_box" hover-class="none" hover-stop-propagation="false"></view>
+</view>
+<!-- 书架列表 -->
+<view class="book_wrap" hover-class="none" hover-stop-propagation="false">
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+  <view class="book_item" hover-class="none" hover-stop-propagation="false">
+    <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="item_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="cha" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
+</view>
+<!-- 底部全选 -->
+<view class="all_select" hover-class="none" hover-stop-propagation="false">
+  <view class="select" hover-class="none" hover-stop-propagation="false"></view>
+  <text class="title" selectable="false" space="false" decode="false">全选</text>
+  <text class="number" selectable="false" space="false" decode="false">已选：0件</text>
+  <view class="sure" hover-class="none" hover-stop-propagation="false">借阅</view>
+</view>

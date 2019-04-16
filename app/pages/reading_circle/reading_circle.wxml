@@ -1,0 +1,37 @@
+<!-- 头部 -->
+<view class="head" hover-class="none" hover-stop-propagation="false">
+  <view class="head_title" hover-class="none" hover-stop-propagation="false">
+    <view class="head_left" hover-class="none" hover-stop-propagation="false">
+      <image class="head_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="head_user" hover-class="none" hover-stop-propagation="false">
+        <text class="title" selectable="false" space="false" decode="false">宝贝书屋</text>
+        <text class="mintitle" selectable="false" space="false" decode="false">藏书0本></text>
+      </view>
+    </view>
+    <view class="head_left" hover-class="none" hover-stop-propagation="false">
+      <view class="head_number" hover-class="none" hover-stop-propagation="false">
+        <view class="number" hover-class="none" hover-stop-propagation="false">
+          借:
+          <text class="other" selectable="false" space="false" decode="false">1</text>
+        </view>
+        <view class="number" hover-class="none" hover-stop-propagation="false">
+          阅:
+          <text class="other" selectable="false" space="false" decode="false">1</text>
+        </view>
+      </view>
+      <view class="head_number_2" hover-class="none" hover-stop-propagation="false">
+        <view class="number" hover-class="none" hover-stop-propagation="false">
+          超过
+          <text class="other" selectable="false" space="false" decode="false">0.0%</text>
+          同龄人
+        </view>
+        <view class="number" hover-class="none" hover-stop-propagation="false">
+          超过
+          <text class="other" selectable="false" space="false" decode="false">0.0%</text>
+          同龄人
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="line" hover-class="none" hover-stop-propagation="false"></view>
+</view>
