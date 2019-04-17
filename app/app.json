@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/membership_plan/membership_plan",
+    "pages/AI_hot_list/AI_hot_list",
+    "pages/interactive_list/interactive_list",
+    "pages/create_book_list/create_book_list",
     "pages/reading_circle/reading_circle",
     "pages/bookshelf/bookshelf",
     "pages/details/details",

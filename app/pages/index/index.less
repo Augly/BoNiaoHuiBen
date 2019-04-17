@@ -1,9 +1,16 @@
 @flex_center: {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 };
 @box: {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 };
 @bor_20: {
@@ -52,9 +59,18 @@
     width: 25%;
     height: 180rpx;
     float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     & .tab_banner {
       .wh(88rpx);
@@ -78,9 +94,16 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   .bg_color(RGBA(240, 242, 245, 1));
   @bor_20();
@@ -98,7 +121,11 @@
   @box();
   padding: 0rpx 21rpx;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-bottom: 1rpx solid RGBA(240, 242, 245, 1);
   &:before {
@@ -130,9 +157,16 @@
   .reading_group {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .bg_color(RGBA(240, 242, 245, 1));
     .read_item {
@@ -141,8 +175,14 @@
       @box();
       padding: 27rpx;
       .bg_color(white);
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       border-top: 2rpx solid RGBA(240, 242, 245, 1);
       .read_item_logo {
@@ -170,8 +210,14 @@
     height: 140rpx;
     @box();
     padding: 20rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .age_group_item {
       width: 170rpx;
@@ -191,15 +237,29 @@
   .special_group {
     width: 100%;
     height: 270rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     .special_item {
       width: 158rpx;
       height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
       // padding: 0 51rpx;
       .special_item_logo {
@@ -225,13 +285,23 @@
   .book_group {
     width: 100%;
     height: 200rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .book_item {
       width: 372rpx;
       height: 200rpx;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .bg_color(rgba(68, 138, 202, 1));
       .book_item_logo {
@@ -243,8 +313,15 @@
       }
       .book_item_res {
         width: 170rpx;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         margin-left: 40rpx;
         .book_title {
@@ -267,8 +344,13 @@
   .hot_group {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .hot_list {
       width: 374rpx;
@@ -277,8 +359,15 @@
       padding: 20rpx;
       border: 1rpx solid RGBA(239, 239, 244, 1);
       border-top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .hot_list_logo {
         .wh(334rpx);
@@ -294,6 +383,8 @@
         width: 294rpx;
         height: 40rpx;
         margin-top: 10rpx;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         .label {
           .bg_color(RGBA(238, 238, 238, 1));

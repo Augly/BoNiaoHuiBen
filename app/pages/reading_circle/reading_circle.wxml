@@ -34,4 +34,129 @@
     </view>
   </view>
   <view class="line" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="head_user" hover-class="none" hover-stop-propagation="false">
+    <view class="head_user_title" hover-class="none" hover-stop-propagation="false">宝贝阅读</view>
+    <view class="head_user_group" hover-class="none" hover-stop-propagation="false">
+      <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
+        <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
+          0本
+        </view>
+        <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
+          本月阅读
+        </view>
+      </view>
+      <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
+        <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
+          0次
+        </view>
+        <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
+          本月阅读次数
+        </view>
+      </view>
+      <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
+        <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
+          0.0%
+        </view>
+        <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
+          本月阅读超同龄人
+        </view>
+      </view>
+    </view>
+    <view class="head_user_scope" hover-class="none" hover-stop-propagation="false">
+      <view class="head_user_scope_item" hover-class="none" hover-stop-propagation="false">
+        <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <text class="title" selectable="false" space="false" decode="false">阅读报告</text>
+      </view>
+      <view class="head_user_scope_item" hover-class="none" hover-stop-propagation="false">
+        <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <text class="title" selectable="false" space="false" decode="false">阅读计划</text>
+      </view>
+    </view>
+  </view>
+  <view class="recle" hover-class="none" hover-stop-propagation="false">记录</view>
+</view>
+<view class="book_friend" hover-class="none" hover-stop-propagation="false">
+  <view class="book_head" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">你可能感兴趣的书友</view>
+    <view class="title_scope" hover-class="none" hover-stop-propagation="false">换一批</view>
+  </view>
+  <view class="book_list" hover-class="none" hover-stop-propagation="false">
+    <view class="item" hover-class="none" hover-stop-propagation="false">
+      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="item_res" hover-class="none" hover-stop-propagation="false">
+        <view class="res_title" hover-class="none" hover-stop-propagation="false">
+          ********1536
+        </view>
+        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
+        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
+      </view>
+    </view>
+    <view class="item" hover-class="none" hover-stop-propagation="false">
+      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="item_res" hover-class="none" hover-stop-propagation="false">
+        <view class="res_title" hover-class="none" hover-stop-propagation="false">
+          ********1536
+        </view>
+        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
+        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
+      </view>
+    </view>
+    <view class="item" hover-class="none" hover-stop-propagation="false">
+      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <view class="item_res" hover-class="none" hover-stop-propagation="false">
+        <view class="res_title" hover-class="none" hover-stop-propagation="false">
+          ********1536
+        </view>
+        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
+        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 搜索组件 -->
+<view class="seacher_group" hover-class="none" hover-stop-propagation="false">
+  <view class="seach_wrap" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="seach_tab" hover-class="none" hover-stop-propagation="false">
+    <view class="tab_item tab_item_active" hover-class="none" hover-stop-propagation="false">
+      热门
+    </view>
+    <view class="tab_item" hover-class="none" hover-stop-propagation="false">最新</view>
+    <view class="tab_item" hover-class="none" hover-stop-propagation="false">关注</view>
+    <view class="tab_item" hover-class="none" hover-stop-propagation="false">我的</view>
+  </view>
+</view>
+<!-- 详情组件 -->
+<view class="mess_list" hover-class="none" hover-stop-propagation="false">
+  <view class="mess_head" hover-class="none" hover-stop-propagation="false">
+    <image class="mess_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view class="mess_detail" hover-class="none" hover-stop-propagation="false">
+      <view class="detail_info" hover-class="none" hover-stop-propagation="false">
+        <view class="detail_info_name" hover-class="none" hover-stop-propagation="false">
+          <text class="name" hover-class="none" hover-stop-propagation="false">元宝</text>
+          <text class="age" hover-class="none" hover-stop-propagation="false">4岁</text>
+          <view class="read_res" hover-class="none" hover-stop-propagation="false">
+            已阅读
+            <text class="res_number" selectable="false" space="false" decode="false">513</text>
+            本
+          </view>
+        </view>
+        <view class="detail_info_time" hover-class="none" hover-stop-propagation="false">
+          2019-4-11 21:52:04
+        </view>
+      </view>
+      <view class="detail_res" hover-class="none" hover-stop-propagation="false">
+        <view class="res_text" hover-class="none" hover-stop-propagation="false">
+          白天老人没给他做作业，晚上课后又剪了头发自己玩了会乐高，只剩一点点时间剪纸和看一本数学绘本了。不过比一比到时思路非常清楚
+        </view>
+        <view class="img_group" hover-class="none" hover-stop-propagation="false">
+          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="mess_scope" hover-class="none" hover-stop-propagation="false">
+    <view class="scope_item" hover-class="none" hover-stop-propagation="false"></view>
+  </view>
 </view>

@@ -1,0 +1,13 @@
+<view class="list" hover-class="none" hover-stop-propagation="false">
+  <input class="list_res" value="" type="text" placeholder="请输入书单名称" placeholder-class="input-placeholder"></input>
+</view>
+<view class="list" hover-class="none" hover-stop-propagation="false">
+  <view class="list_res input-placeholder">适合年龄（可多选，必填项）</view>
+</view>
+<view class="list" hover-class="none" hover-stop-propagation="false">
+  <view class="list_res input-placeholder">选择分类（可多选，非必填项）</view>
+</view>
+<view class="text_wrap" hover-class="none" hover-stop-propagation="false">
+  <textarea class="text_input" value="" placeholder="介绍一下这个书单（请尽量详细描述，小编会筛选有趣的书单展示出来哦~）" placeholder-style="" placeholder-class="input-placeholder"></textarea>
+</view>
+<view class="sure_button" hover-class="none" hover-stop-propagation="false">提交</view>

@@ -1,22 +1,23 @@
 @flex_center: {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-}
-
-;
+};
 
 @box: {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-;
+};
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-}
-
-;
+};
 
 .bg_color(@color) {
   background-color: @color;
@@ -38,25 +39,45 @@
   .bg_color(RGBA(68, 138, 202, 1));
   @box();
   padding: 0rpx 30rpx 30rpx 30rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   .user_info_head {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 
     .icon {
       .wh(40rpx);
-      .bg_color(red)
+      .bg_color(red);
     }
 
     .info {
       width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
 
       .info_val {
@@ -75,14 +96,27 @@
 
   .user_info_res {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 
     .user_info_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -ms-flex-pack: distribute;
       justify-content: space-around;
 
       .user_info_item_title {
@@ -103,13 +137,21 @@
   width: 100%;
   height: 86rpx;
   .bg_color(RGBA(60, 121, 177, 1));
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   .discount_item {
     width: 374rpx;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     .item_icon {
@@ -136,15 +178,27 @@
 .orde_group {
   width: 100%;
   height: 364rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   .order_item {
     width: 25%;
     height: 182rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     .order_item_logo {
@@ -165,26 +219,43 @@
   width: 100%;
   height: 166rpx;
   @bor_20();
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   .book_list_left {
     width: 327rpx;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 64rpx;
 
     .book_list_icon {
       .wh(84rpx);
-      .bg_color(red)
+      .bg_color(red);
     }
 
     .book_list_res {
       margin-left: 22rpx;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
 
       .book_list_title {
@@ -203,26 +274,40 @@
   .book_line {
     width: 2rpx;
     height: 86rpx;
-    .bg_color(RGBA(224, 224, 224, 1))
+    .bg_color(RGBA(224, 224, 224, 1));
   }
 
   .book_list_right {
     width: 420rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 
     .book_list_right_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       height: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
 
       .book_list_right_item_logo {
         width: 70rpx;
         height: 60rpx;
-        .bg_color(red)
+        .bg_color(red);
       }
 
       .book_list_right_item_title {
@@ -232,28 +317,42 @@
       }
     }
   }
-
 }
 
 .effect {
   width: 100%;
   height: 170rpx;
   @bor_20();
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 
   .effect_item {
     width: 25%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     .effect_item_logo {
       .wh(64rpx);
-      .bg_color(red)
+      .bg_color(red);
     }
 
     .effect_item_title {
@@ -274,8 +373,14 @@
     width: 100%;
     height: 110rpx;
     @box();
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     border-bottom: 1rpx solid RGBA(239, 239, 244, 1);
     padding: 0rpx 30rpx;
@@ -298,6 +403,5 @@
       margin-left: auto;
       text-align: right;
     }
-
   }
 }

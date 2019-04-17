@@ -1,10 +1,17 @@
 @flex_center: {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 };
 
 @box: {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 };
 
@@ -35,7 +42,11 @@ page {
   top: 0;
   @box();
   padding: 20rpx 30rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   .tip_icon {
     .wh(16rpx);
@@ -86,7 +97,11 @@ page {
     border-bottom: 1rpx solid RGBA(239, 239, 244, 1);
     @box();
     padding: 20rpx 30rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
     .item_logo {
@@ -120,7 +135,11 @@ page {
   bottom: 0;
   @box();
   padding: 20rpx 0rpx 20rpx 30rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   .title {
     font-size: 32rpx;

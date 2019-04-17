@@ -1,0 +1,58 @@
+<!-- 搜索组件 -->
+<view class="search_group">
+  <view class="search_box" hover-class="none" hover-stop-propagation="false"></view>
+</view>
+<!-- 筛选组件 -->
+<view class="pick_group" hover-class="none" hover-stop-propagation="false">
+  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
+  <view class="line" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
+  <view class="line" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
+</view>
+<view class="list_wrap" hover-class="none" hover-stop-propagation="false">
+  <view class="list" hover-class="none" hover-stop-propagation="false">
+    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
+      <view class="list_title" hover-class="none" hover-stop-propagation="false">
+        经典英语启蒙系列之——大卫不可以
+      </view>
+      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
+        <text class="tab_item" selectable="false" space="false" decode="false">111</text>
+      </view>
+      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
+        <text class="tab_item" selectable="false" space="false" decode="false">111</text>
+      </view>
+      <view class="list_res" hover-class="none" hover-stop-propagation="false">
+        22小时前更新  1人推荐  235人点赞
+      </view>
+      <view class="list_scope" hover-class="none" hover-stop-propagation="false">
+        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+  <view class="list" hover-class="none" hover-stop-propagation="false">
+    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
+      <view class="list_title" hover-class="none" hover-stop-propagation="false">
+        经典英语启蒙系列之——大卫不可以
+      </view>
+      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
+        <text class="tab_item" selectable="false" space="false" decode="false">111</text>
+      </view>
+      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
+        <text class="tab_item" selectable="false" space="false" decode="false">111</text>
+      </view>
+      <view class="list_res" hover-class="none" hover-stop-propagation="false">
+        22小时前更新  1人推荐  235人点赞
+      </view>
+      <view class="list_scope" hover-class="none" hover-stop-propagation="false">
+        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 固定导航 -->
+<view class="flxed_nav" hover-class="none" hover-stop-propagation="false">创建书单</view>

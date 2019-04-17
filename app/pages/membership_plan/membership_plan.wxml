@@ -1,0 +1,94 @@
+<!-- tip提示 -->
+<view class="tip" hover-class="none" hover-stop-propagation="false">往返包邮，正版图书，全面消毒</view>
+<view class="card_wrap" hover-class="none" hover-stop-propagation="false">
+  <view class="title" hover-class="none" hover-stop-propagation="false">不限次卡</view>
+  <view class="card" hover-class="none" hover-stop-propagation="false">
+    <view class="card_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
+      <text class="price" selectable="false" space="false" decode="false">￥299</text>
+      <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
+      <image class="card_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="card_tab" hover-class="none" hover-stop-propagation="false">
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="item_title" selectable="false" space="false" decode="false">10本</text>
+        <text class="item_mintitle" selectable="false" space="false" decode="false">每次可借</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="item_title" selectable="false" space="false" decode="false">不限次</text>
+        <text class="item_mintitle" selectable="false" space="false" decode="false">借阅次数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="item_title" selectable="false" space="false" decode="false">90天</text>
+        <text class="item_mintitle" selectable="false" space="false" decode="false">有效天数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="item_title" selectable="false" space="false" decode="false">1单</text>
+        <text class="item_mintitle" selectable="false" space="false" decode="false">同时可借</text>
+      </view>
+    </view>
+  </view>
+  <view class="card year_card" hover-class="none" hover-stop-propagation="false">
+    <view class="card_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
+      <text class="price" selectable="false" space="false" decode="false">￥299</text>
+      <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
+      <image class="card_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="card_tab" hover-class="none" hover-stop-propagation="false">
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="year_color" selectable="false" space="false" decode="false">10本</text>
+        <text class="year_mincolor" selectable="false" space="false" decode="false">每次可借</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class=" year_color" selectable="false" space="false" decode="false">不限次</text>
+        <text class="year_mincolor" selectable="false" space="false" decode="false">借阅次数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="year_color" selectable="false" space="false" decode="false">90天</text>
+        <text class="year_mincolor" selectable="false" space="false" decode="false">有效天数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="year_color" selectable="false" space="false" decode="false">1单</text>
+        <text class="year_mincolor" selectable="false" space="false" decode="false">同时可借</text>
+      </view>
+    </view>
+  </view>
+  <view class="card vip_year_card" hover-class="none" hover-stop-propagation="false">
+    <view class="card_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
+      <text class="price" selectable="false" space="false" decode="false">￥299</text>
+      <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
+      <image class="card_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view class="card_tab" hover-class="none" hover-stop-propagation="false">
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="vip_color" selectable="false" space="false" decode="false">10本</text>
+        <text class="vip_mintitle" selectable="false" space="false" decode="false">每次可借</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="vip_color" selectable="false" space="false" decode="false">不限次</text>
+        <text class="vip_mintitle" selectable="false" space="false" decode="false">借阅次数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="vip_color" selectable="false" space="false" decode="false">90天</text>
+        <text class="vip_mintitle" selectable="false" space="false" decode="false">有效天数</text>
+      </view>
+      <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+        <text class="vip_color" selectable="false" space="false" decode="false">1单</text>
+        <text class="vip_mintitle" selectable="false" space="false" decode="false">同时可借</text>
+      </view>
+    </view>
+  </view>
+  <view class="tip_res" hover-class="none" hover-stop-propagation="false">
+    <text class="tip_title" selectable="false" space="false" decode="false">不限次卡借阅须知：</text>
+    用户同时可借订单达到限制后，需要归还部分订单方可继续借阅。归还以用户把订单交给快递员并在我的订单里手工输入快递单号为准。
+  </view>
+</view>
+<view class="sure_button" hover-class="none" hover-stop-propagation="false">
+  <view class="money_left" hover-class="none" hover-stop-propagation="false">
+    <view class="title" hover-class="none" hover-stop-propagation="false">实付金额      0.00  元</view>
+    <view class="mintitle" hover-class="none" hover-stop-propagation="false">押金可退：0.00  元</view>
+  </view>
+  <view class="sure" hover-class="none" hover-stop-propagation="false">结算</view>
+</view>
