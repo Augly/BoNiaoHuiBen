@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "阅读圈",
-  "usingComponents": {}
+  "usingComponents": {
+    "calendar": "/components/calendar/calendar"
+  }
 }

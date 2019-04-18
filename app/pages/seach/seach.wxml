@@ -1,0 +1,26 @@
+<view class="seach_group" hover-class="none" hover-stop-propagation="false"></view>
+<view class="tab_group" hover-class="none" hover-stop-propagation="false">
+  <view class="tab_item tab_item_active" hover-class="none" hover-stop-propagation="false">综合</view>
+  <view class="tab_item" hover-class="none" hover-stop-propagation="false">销量</view>
+  <view class="tab_item" hover-class="none" hover-stop-propagation="false">最新</view>
+</view>
+<view class="hot_group" hover-class="none" hover-stop-propagation="false">
+  <view class="hot_list" hover-class="none" hover-stop-propagation="false">
+    <image class="hot_list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    <view class="hot_list_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="hot_list_label" hover-class="none" hover-stop-propagation="false">
+      <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+      <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+      <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+  </view>
+  <view class="hot_list" hover-class="none" hover-stop-propagation="false">
+    <image class="hot_list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    <view class="hot_list_res" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="hot_list_label" hover-class="none" hover-stop-propagation="false">
+      <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+      <text class="label" selectable="false" space="false" decode="false">0-3岁</text>
+      <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+  </view>
+</view>

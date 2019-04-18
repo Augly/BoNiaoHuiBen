@@ -75,6 +75,13 @@
   </view>
   <view class="recle" hover-class="none" hover-stop-propagation="false">记录</view>
 </view>
+<view class="calendar_wrap">
+  <view class="title" hover-class="none" hover-stop-propagation="false">阅读日历</view>
+  <calendar days-color="{{style}}" week-d="{{isShow}}" bindnextMonth='nextMonth' bindprevMonth='prevMonth' binddateChange='dateChange' binddayClick='dayClick' />
+  <view class="scope" hover-class="none" hover-stop-propagation="false" bindtap='changeshow'>
+    {{isShow?'点击收起':'点击查看更多'}}
+  </view>
+</view>
 <view class="book_friend" hover-class="none" hover-stop-propagation="false">
   <view class="book_head" hover-class="none" hover-stop-propagation="false">
     <view class="title" hover-class="none" hover-stop-propagation="false">你可能感兴趣的书友</view>

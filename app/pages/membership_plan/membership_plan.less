@@ -39,8 +39,14 @@ page {
   width: 100%;
   height: 80rpx;
   .bg_color(RGBA(238, 255, 197, 1));
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   font-size: 30rpx;
   color: rgba(128, 194, 105, 1);
@@ -60,14 +66,27 @@ page {
   .card {
     width: 710rpx;
     height: 236rpx;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(179, 212, 101, 1)),
+      to(rgba(238, 255, 197, 1))
+    );
     background: linear-gradient(rgba(179, 212, 101, 1), rgba(238, 255, 197, 1));
     border-radius: 20rpx;
     margin-top: 20rpx;
     @box();
     padding: 30rpx;
     .card_title {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
       justify-content: flex-end;
       margin-top: 20rpx;
       .title {
@@ -94,16 +113,31 @@ page {
     .card_tab {
       width: 100%;
       height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
       margin-top: 30rpx;
       @box();
       padding: 0rpx 50rpx;
       .tab_item {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         .item_title {
           font-size: 28rpx;
@@ -137,9 +171,23 @@ page {
   }
 
   .year_card {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(126, 206, 244, 1)),
+      to(rgba(211, 241, 255, 1))
+    );
     background: linear-gradient(rgba(126, 206, 244, 1), rgba(211, 241, 255, 1));
   }
   .vip_year_card {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(246, 179, 127, 1)),
+      to(rgba(255, 230, 211, 1))
+    );
     background: linear-gradient(rgba(246, 179, 127, 1), rgba(255, 230, 211, 1));
   }
   .tip_res {
@@ -157,8 +205,14 @@ page {
 .sure_button {
   width: 100%;
   height: 100rpx;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   .bg_color(white);
   position: fixed;
@@ -166,8 +220,15 @@ page {
   .money_left {
     width: 520rpx;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     @box();
     padding-left: 50rpx;
