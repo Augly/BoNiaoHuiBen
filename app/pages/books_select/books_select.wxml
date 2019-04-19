@@ -1,6 +1,6 @@
 <!-- 搜索组件 -->
 <view class="search_group">
-    <view class="search_box" hover-class="none" hover-stop-propagation="false"></view>
+     
 </view>
 <!-- 条件筛选 -->
 <view class="select_wrap" hover-class="none" hover-stop-propagation="false">

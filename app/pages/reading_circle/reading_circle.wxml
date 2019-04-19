@@ -2,33 +2,31 @@
 <view class="head" hover-class="none" hover-stop-propagation="false">
   <view class="head_title" hover-class="none" hover-stop-propagation="false">
     <view class="head_left" hover-class="none" hover-stop-propagation="false">
-      <image class="head_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image class="head_val" src="{{val}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       <view class="head_user" hover-class="none" hover-stop-propagation="false">
-        <text class="title" selectable="false" space="false" decode="false">宝贝书屋</text>
-        <text class="mintitle" selectable="false" space="false" decode="false">藏书0本></text>
+        <text class="title" selectable="false" space="false" decode="false">{{name}}</text>
+        <text class="mintitle">藏书{{c_number}}本></text>
       </view>
     </view>
     <view class="head_left" hover-class="none" hover-stop-propagation="false">
       <view class="head_number" hover-class="none" hover-stop-propagation="false">
-        <view class="number" hover-class="none" hover-stop-propagation="false">
+        <view class="number" style="margin-top:0rpx;" hover-class="none" hover-stop-propagation="false">
           借:
-          <text class="other" selectable="false" space="false" decode="false">1</text>
+          <text class="other" selectable="false" space="false" decode="false">{{j_number}}</text>
         </view>
         <view class="number" hover-class="none" hover-stop-propagation="false">
           阅:
-          <text class="other" selectable="false" space="false" decode="false">1</text>
+          <text class="other" selectable="false" space="false" decode="false">{{read_number}}</text>
         </view>
       </view>
       <view class="head_number_2" hover-class="none" hover-stop-propagation="false">
-        <view class="number" hover-class="none" hover-stop-propagation="false">
+        <view class="number" style="margin-top:0rpx;" hover-class="none" hover-stop-propagation="false">
           超过
-          <text class="other" selectable="false" space="false" decode="false">0.0%</text>
-          同龄人
+          <text class="other" selectable="false" space="false" decode="false">{{j_rate}}</text> 同龄人
         </view>
         <view class="number" hover-class="none" hover-stop-propagation="false">
           超过
-          <text class="other" selectable="false" space="false" decode="false">0.0%</text>
-          同龄人
+          <text class="other" selectable="false" space="false" decode="false">{{read_rate}}</text> 同龄人
         </view>
       </view>
     </view>
@@ -39,7 +37,7 @@
     <view class="head_user_group" hover-class="none" hover-stop-propagation="false">
       <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
         <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
-          0本
+          {{mouth_read}}本
         </view>
         <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
           本月阅读
@@ -47,7 +45,7 @@
       </view>
       <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
         <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
-          0次
+          {{mouth_number}}次
         </view>
         <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
           本月阅读次数
@@ -55,7 +53,7 @@
       </view>
       <view class="head_user_item" hover-class="none" hover-stop-propagation="false">
         <view class="head_user_item_title" hover-class="none" hover-stop-propagation="false">
-          0.0%
+          {{mouth_rate}}
         </view>
         <view class="head_user_item_mintitle" hover-class="none" hover-stop-propagation="false">
           本月阅读超同龄人
@@ -64,11 +62,11 @@
     </view>
     <view class="head_user_scope" hover-class="none" hover-stop-propagation="false">
       <view class="head_user_scope_item" hover-class="none" hover-stop-propagation="false">
-        <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="icon" src="/images/20190419163053.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
         <text class="title" selectable="false" space="false" decode="false">阅读报告</text>
       </view>
       <view class="head_user_scope_item" hover-class="none" hover-stop-propagation="false">
-        <image class="icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="icon" src="/images/20190419163114.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
         <text class="title" selectable="false" space="false" decode="false">阅读计划</text>
       </view>
     </view>
@@ -78,43 +76,25 @@
 <view class="calendar_wrap">
   <view class="title" hover-class="none" hover-stop-propagation="false">阅读日历</view>
   <calendar days-color="{{style}}" week-d="{{isShow}}" bindnextMonth='nextMonth' bindprevMonth='prevMonth' binddateChange='dateChange' binddayClick='dayClick' />
-  <view class="scope" hover-class="none" hover-stop-propagation="false" bindtap='changeshow'>
+  <!-- <view class="scope" hover-class="none" hover-stop-propagation="false" bindtap='changeshow'>
     {{isShow?'点击收起':'点击查看更多'}}
-  </view>
+  </view> -->
+  <image class="scope" src="{{isShow?'/images/up.png':'/images/down.png'}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" bindtap='changeshow'></image>
 </view>
 <view class="book_friend" hover-class="none" hover-stop-propagation="false">
   <view class="book_head" hover-class="none" hover-stop-propagation="false">
     <view class="title" hover-class="none" hover-stop-propagation="false">你可能感兴趣的书友</view>
-    <view class="title_scope" hover-class="none" hover-stop-propagation="false">换一批</view>
+    <image class="title_scope" src="/images/huan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <!-- <view class="title_scope" hover-class="none" hover-stop-propagation="false">换一批</view> -->
   </view>
   <view class="book_list" hover-class="none" hover-stop-propagation="false">
-    <view class="item" hover-class="none" hover-stop-propagation="false">
-      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view class="item" hover-class="none" hover-stop-propagation="false" wx:for="{{book_fr}}" wx:for-index="index" wx:for-item="item">
+      <image class="item_val" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       <view class="item_res" hover-class="none" hover-stop-propagation="false">
         <view class="res_title" hover-class="none" hover-stop-propagation="false">
-          ********1536
+          {{item.tel}}
         </view>
-        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
-        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
-      </view>
-    </view>
-    <view class="item" hover-class="none" hover-stop-propagation="false">
-      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <view class="item_res" hover-class="none" hover-stop-propagation="false">
-        <view class="res_title" hover-class="none" hover-stop-propagation="false">
-          ********1536
-        </view>
-        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
-        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
-      </view>
-    </view>
-    <view class="item" hover-class="none" hover-stop-propagation="false">
-      <image class="item_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <view class="item_res" hover-class="none" hover-stop-propagation="false">
-        <view class="res_title" hover-class="none" hover-stop-propagation="false">
-          ********1536
-        </view>
-        <view class="res_sex" hover-class="none" hover-stop-propagation="false">6岁</view>
+        <view class="res_sex" hover-class="none" hover-stop-propagation="false">{{item.age}}岁</view>
         <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
       </view>
     </view>
@@ -122,48 +102,55 @@
 </view>
 <!-- 搜索组件 -->
 <view class="seacher_group" hover-class="none" hover-stop-propagation="false">
-  <view class="seach_wrap" hover-class="none" hover-stop-propagation="false"></view>
-  <view class="seach_tab" hover-class="none" hover-stop-propagation="false">
-    <view class="tab_item tab_item_active" hover-class="none" hover-stop-propagation="false">
-      热门
+  <view class="seach_wrap" hover-class="none" hover-stop-propagation="false">
+    <view class="search_box" hover-class="none" hover-stop-propagation="false">
+      <text class="iconfont icon-sousuo" selectable="false" space="false" decode="false"></text>
+      <input class="serch_ipt" type="text" placeholder="请搜索用户手机号/昵称/帖子内容" placeholder-class="serch_ipt"></input>
+      <view class="search_button" hover-class="none" hover-stop-propagation="false">搜索</view>
     </view>
-    <view class="tab_item" hover-class="none" hover-stop-propagation="false">最新</view>
-    <view class="tab_item" hover-class="none" hover-stop-propagation="false">关注</view>
-    <view class="tab_item" hover-class="none" hover-stop-propagation="false">我的</view>
+  </view>
+  <view class="seach_tab" hover-class="none" hover-stop-propagation="false">
+    <view class="tab_item {{tab_index==index?'tab_item_active':''}}" bind:tap="select" data-index='{{index}}' hover-class="none" hover-stop-propagation="false" wx:for="{{tab}}" wx:for-item="item" wx:for-index="index">
+      {{item.label}}
+    </view>
   </view>
 </view>
 <!-- 详情组件 -->
 <view class="mess_list" hover-class="none" hover-stop-propagation="false">
-  <view class="mess_head" hover-class="none" hover-stop-propagation="false">
-    <image class="mess_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+  <view class="mess_head" hover-class="none" hover-stop-propagation="false" wx:for="{{friendList}}" wx:for-item="item" wx:for-index="index">
+    <image class="mess_val" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
     <view class="mess_detail" hover-class="none" hover-stop-propagation="false">
       <view class="detail_info" hover-class="none" hover-stop-propagation="false">
         <view class="detail_info_name" hover-class="none" hover-stop-propagation="false">
-          <text class="name" hover-class="none" hover-stop-propagation="false">元宝</text>
-          <text class="age" hover-class="none" hover-stop-propagation="false">4岁</text>
-          <view class="read_res" hover-class="none" hover-stop-propagation="false">
+          <text class="name" hover-class="none" hover-stop-propagation="false">{{item.name}}</text>
+          <text class="age" hover-class="none" hover-stop-propagation="false">{{item.age}}岁</text>
+          <view class="read_res">
             已阅读
-            <text class="res_number" selectable="false" space="false" decode="false">513</text>
-            本
+            <text class="res_number">{{item.read_number}}</text> 本
           </view>
         </view>
         <view class="detail_info_time" hover-class="none" hover-stop-propagation="false">
-          2019-4-11 21:52:04
+          {{item.time}}
         </view>
       </view>
       <view class="detail_res" hover-class="none" hover-stop-propagation="false">
         <view class="res_text" hover-class="none" hover-stop-propagation="false">
-          白天老人没给他做作业，晚上课后又剪了头发自己玩了会乐高，只剩一点点时间剪纸和看一本数学绘本了。不过比一比到时思路非常清楚
+          {{item.content}}
         </view>
         <view class="img_group" hover-class="none" hover-stop-propagation="false">
-          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-          <image class="img_list" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+          <image class="img_list" src="{{imgitem}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" wx:for="{{item.img_list}}" wx:for-index="imgindex" wx:for-item="imgitem"></image>
         </view>
       </view>
     </view>
   </view>
   <view class="mess_scope" hover-class="none" hover-stop-propagation="false">
-    <view class="scope_item" hover-class="none" hover-stop-propagation="false"></view>
+    <view class="scope_item" hover-class="none" hover-stop-propagation="false">
+      <image class="scope_icon" src="/images/message.png" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
+      20
+    </view>
+    <view class="scope_item" hover-class="none" hover-stop-propagation="false">
+      <image class="scope_icon" src="/images/zan.png" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
+      20
+    </view>
   </view>
 </view>

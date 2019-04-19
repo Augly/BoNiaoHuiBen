@@ -79,6 +79,32 @@ page {
     height: 60rpx;
     .br_rds(60rpx);
     .bg_color(white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    // justify-content: space-around;
+    @box();
+    padding: 0rpx 20rpx;
+    .serch_ipt {
+      width: 430rpx;
+      height: 100%;
+      font-size: 28rpx;
+      color: RGBA(174, 174, 174, 1);
+      margin-right: 20rpx;
+    }
+    .iconfont {
+      margin-right: 20rpx;
+      font-size: 35rpx;
+      color: RGBA(174, 174, 174, 1);
+    }
+    .search_button {
+      color: RGBA(68, 138, 202, 1);
+      font-size: 28rpx;
+      margin-left: auto;
+    }
   }
 }
 .select {
@@ -103,24 +129,31 @@ page {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
+    .icon-unxuanze {
+      font-size: 40rpx;
+      color: RGBA(174, 174, 174, 1);
+    }
+    .icon-xuanze {
+      font-size: 40rpx;
+      color: RGBA(68, 138, 202, 1);
+    }
     .item_logo {
       width: 130rpx;
       height: 134rpx;
-      .bg_color(yellow);
+      // .bg_color(yellow);
       margin-left: 30rpx;
     }
     .item_res {
       width: 400rpx;
       height: 134rpx;
-      .bg_color(blue);
+      // .bg_color(blue);
       margin-left: 20rpx;
       font-size: 26rpx;
       color: rgba(87, 87, 87, 1);
     }
     .cha {
       .wh(18rpx);
-      .bg_color(black);
+      // .bg_color(black);
       margin-left: auto;
     }
   }
@@ -145,6 +178,14 @@ page {
     font-size: 32rpx;
     color: rgba(51, 51, 51, 1);
     margin-left: 30rpx;
+  }
+  .icon-unxuanze {
+    font-size: 40rpx;
+    color: RGBA(174, 174, 174, 1);
+  }
+  .icon-xuanze {
+    font-size: 40rpx;
+    color: RGBA(68, 138, 202, 1);
   }
   .number {
     .title;

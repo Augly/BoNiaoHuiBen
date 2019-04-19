@@ -1,85 +1,80 @@
 <!-- 个人信息组件 -->
 <view class="user_info" hover-class="none" hover-stop-propagation="false">
   <view class="user_info_head" hover-class="none" hover-stop-propagation="false">
-    <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
+    <!-- <view class="icon" hover-class="none" hover-stop-propagation="false"></view> -->
+    <image class='icon' src='/images/mess.png'></image>
     <view class="info" hover-class="none" hover-stop-propagation="false">
-      <image class="info_val" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <text class="info_name" selectable="false" space="false" decode="false"></text>
+      <image class="info_val" src="/images/20190419114145.jpg" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <text class="info_name" selectable="false" space="false" decode="false">YaMi</text>
     </view>
-    <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
+    <image class='icon' src='/images/set.png'></image>
   </view>
   <view class="user_info_res" hover-class="none" hover-stop-propagation="false">
     <view class="user_info_item" hover-class="none" hover-stop-propagation="false">
       <text class="user_info_item_title" selectable="false" space="false" decode="false">0</text>
-      <text class="user_info_item_mintitle" selectable="false" space="false" decode="false">
-        关注
-      </text>
+      <text class="user_info_item_mintitle" >关注</text>
+    </view>
+    <view class="user_info_item" hover-class="none" hover-stop-propagation="false">
+       <text class="user_info_item_title" selectable="false" space="false" decode="false">0</text>
+      <text class="user_info_item_mintitle" >粉丝</text>
     </view>
     <view class="user_info_item" hover-class="none" hover-stop-propagation="false">
       <text class="user_info_item_title" selectable="false" space="false" decode="false">0</text>
-      <text class="user_info_item_mintitle" selectable="false" space="false" decode="false">
-        关注
-      </text>
-    </view>
-    <view class="user_info_item" hover-class="none" hover-stop-propagation="false">
-      <text class="user_info_item_title" selectable="false" space="false" decode="false">0</text>
-      <text class="user_info_item_mintitle" selectable="false" space="false" decode="false">
-        关注
-      </text>
+      <text class="user_info_item_mintitle" >藏书</text>
     </view>
   </view>
 </view>
 <!-- 优惠券金币 -->
 <view class="discount" hover-class="none" hover-stop-propagation="false">
   <view class="discount_item" hover-class="none" hover-stop-propagation="false">
-    <image class="item_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="item_icon" src="/images/yh.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="item_title" selectable="false" space="false" decode="false">优惠券：1</text>
   </view>
   <view class="line" hover-class="none" hover-stop-propagation="false"></view>
   <view class="discount_item" hover-class="none" hover-stop-propagation="false">
-    <image class="item_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="item_icon" src="/images/money.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="item_title" selectable="false" space="false" decode="false">金币：0</text>
   </view>
 </view>
 <!-- 订单组件 -->
 <view class="orde_group" hover-class="none" hover-stop-propagation="false">
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    <image class="order_item_logo" src="/images/oedel6.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
     <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待付款</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel1.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待发货</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel5.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待收货</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel2.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待归还</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel3.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待结算</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel4.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">待评价</text>
   </view>
   <view class="order_item" hover-class="none" hover-stop-propagation="false">
-    <image class="order_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-    <text class="order_item_title" selectable="false" space="false" decode="false">全部订单</text>
+    <image class="order_item_logo" src="/images/oedel7.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <text class="order_item_title" selectable="false" space="false" decode="false">退款退货</text>
   </view>
 </view>
 <!-- 书单组件 -->
 <view class="book_list" hover-class="none" hover-stop-propagation="false">
   <view class="book_list_left" hover-class="none" hover-stop-propagation="false">
-    <image class="book_list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="book_list_icon" src="/images/bady.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <view class="book_list_res" hover-class="none" hover-stop-propagation="false">
       <text class="book_list_title" selectable="false" space="false" decode="false">0</text>
       <text class="book_list_mintitle" selectable="false" space="false" decode="false">宝贝书架</text>
@@ -88,81 +83,78 @@
   <view class="book_line" hover-class="none" hover-stop-propagation="false"></view>
   <view class="book_list_right" hover-class="none" hover-stop-propagation="false">
     <view class="book_list_right_item" hover-class="none" hover-stop-propagation="false">
-      <image class="book_list_right_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <view class="book_list_right_item_title" selectable="false" space="false" decode="false">
-        我的书单
-      </view>
+      <image class="book_list_right_item_logo" src="/images/mybook.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     </view>
     <view class="book_list_right_item" hover-class="none" hover-stop-propagation="false">
-      <image class="book_list_right_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <view class="book_list_right_item_title" selectable="false" space="false" decode="false">
-        我的书单
-      </view>
+      <image class="book_list_right_item_logo" src="/images/readPlane.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     </view>
     <view class="book_list_right_item" hover-class="none" hover-stop-propagation="false">
-      <image class="book_list_right_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-      <view class="book_list_right_item_title" selectable="false" space="false" decode="false">
-        我的书单
-      </view>
+      <image class="book_list_right_item_logo" src="/images/readport.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     </view>
   </view>
 </view>
 <!-- 功能组件 -->
 <view class="effect" hover-class="none" hover-stop-propagation="false">
   <view class="effect_item" hover-class="none" hover-stop-propagation="false">
-    <image class="effect_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="effect_item_logo" src="/images/tab11.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="effect_item_title" selectable="false" space="false" decode="false">交易订单</text>
   </view>
   <view class="effect_item" hover-class="none" hover-stop-propagation="false">
-    <image class="effect_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="effect_item_title" selectable="false" space="false" decode="false">交易订单</text>
+    <image class="effect_item_logo" src="/images/tab12.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="effect_item_title" selectable="false" space="false" decode="false">金币任务</text>
   </view>
   <view class="effect_item" hover-class="none" hover-stop-propagation="false">
-    <image class="effect_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="effect_item_title" selectable="false" space="false" decode="false">交易订单</text>
+    <image class="effect_item_logo" src="/images/tab13.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="effect_item_title" selectable="false" space="false" decode="false">小盒子</text>
   </view>
   <view class="effect_item" hover-class="none" hover-stop-propagation="false">
-    <image class="effect_item_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="effect_item_title" selectable="false" space="false" decode="false">交易订单</text>
+    <image class="effect_item_logo" src="/images/tab10.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="effect_item_title" selectable="false" space="false" decode="false">绘本回收</text>
   </view>
 </view>
 <!-- 功能导航 -->
 <view class="navigation" hover-class="none" hover-stop-propagation="false">
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <image class="list_logo" src="/images/nt_member.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
     <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/xy.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">信用押金</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">查看押金</view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/yw.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">心愿书单</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false"></view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/adder.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">收货地址</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false"></view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/member.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">会员兑换</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false"></view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/help.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">帮助中心</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false"></view>
+    <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
   </view>
 </view>
 <view class="navigation" hover-class="none" hover-stop-propagation="false">
   <view class="list" hover-class="none" hover-stop-propagation="false">
-    <image class="list_logo" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-    <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
-    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>
+    <image class="list_logo" src="/images/checkout.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <text class="list_title" selectable="false" space="false" decode="false">切换账号</text>
+    <view class="list_mintitle" hover-class="none" hover-stop-propagation="false"></view>
   </view>
 </view>

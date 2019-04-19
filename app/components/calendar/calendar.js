@@ -511,8 +511,10 @@ Component({
           month: month,
           year: year,
           info: 'current',
+          backgroundimg:'',
+          checked:0,
           color: month == nowMouth ? i == new Date().getDate() ? '#FFFFFF' : '#4a4f74' : '#4a4f74',
-          background: month == nowMouth ? i == new Date().getDate() ? '#6EB2F1' : 'transparent' : 'transparent'
+          background: month == nowMouth ? i == new Date().getDate() ? '#6EB2F1' : '' : ''
         })
       }
       const days_range = temp // 本月
@@ -549,14 +551,24 @@ Component({
        */
       for (let i = 0; i < this.data.days_color.length; i++) {
         const item = this.data.days_color[i]
-        const background = item.background ? item.background : 'transparent'
+        const background = item.background ? item.background : ''
         for (let j = 0; j < days.length; j++) {
           if (days[j].info == item.month && days[j].day == item.day) {
             if (item.color) {
               days[j].color = item.color + '!important'
             }
             if (item.background) {
-              days[j].background = item.background + '!important'
+              if (item.day == new Date().getDate()){
+                days[j].background = ''
+              }else{
+                days[j].background = item.background + '!important'
+              }
+            }
+            if (item.backgroundimg) {
+              days[j].backgroundimg = item.backgroundimg + '!important'
+            }
+            if (item.checked) {
+              days[j].checked = item.checked 
             }
           }
         }
@@ -746,7 +758,8 @@ Component({
         color: click_day.color,
         lunarMonth: click_day.lunarMonth,
         lunarDay: click_day.lunarDay,
-        background: click_day.background
+        background: click_day.background,
+        checked: click_day.checked
       }
       this.triggerEvent('dayClick', eventDetail)
     }

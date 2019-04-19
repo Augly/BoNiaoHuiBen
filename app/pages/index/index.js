@@ -14,38 +14,150 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 500,
+    //宫格导航
     tabList: [
       {
-        banner_color: 'RGBA(145, 189, 229, 1)',
+        src: '/images/tab9.png',
         title: '智能选书'
       },
       {
-        banner_color: 'RGBA(170, 224, 247, 1)',
+        src: '/images/tab4.png',
         title: '系列'
       },
       {
-        banner_color: 'RGBA(159, 218, 138, 1)',
+        src: '/images/tab2.png',
         title: '绘本回收'
       },
       {
-        banner_color: 'RGBA(250, 205, 137, 1)',
+        src: '/images/tab3.png',
         title: '加入会员'
       },
       {
-        banner_color: 'RGBA(221, 181, 217, 1)',
+        src: '/images/tab1.png',
         title: '儿童玩具'
       },
       {
-        banner_color: 'RGBA(169, 212, 203, 1)',
+        src: '/images/tab7.png',
         title: '新书上架'
       },
       {
-        banner_color: 'RGBA(242, 156, 159, 1)',
+        src: '/images/tab6.png',
         title: '小盒子'
       },
       {
-        banner_color: 'RGBA(199, 194, 226, 1)',
+        src: '/images/tab8.png',
         title: '英文原版'
+      }
+    ],
+    //点读专区
+    readlist: [
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      }
+    ],
+
+    //特色人物专区
+    characters: [
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      }
+    ],
+    //名家大师
+    special_characters: [
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      }
+    ],
+    //名品馆
+    famous_list: [
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '毛毛虫'
+      }
+    ],
+    //名人书单
+    famous_book: [
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰'
+      }
+    ],
+    //大奖专区
+    gold_list: [
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰'
+      },
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰'
+      }
+    ],
+    //热门推荐
+    hot_list: [
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰',
+        tab: ['0-3岁', '科普百科']
+      },
+      {
+        src: '/images/gold2.png',
+        title: '吴敏兰',
+        tab: ['0-3岁', '科普百科']
+      }
+    ],
+    //年龄专区
+    age_list: [
+      {
+        bg_color: 'RGBA(157, 211, 160, 0.6)',
+        title: '0-3岁'
+      },
+      {
+        bg_color: 'RGBA(229, 177, 112, 0.6)',
+        title: '3-6岁'
+      },
+      {
+        bg_color: 'RGBA(223, 149, 112, 0.6)',
+        title: '7-10岁'
+      },
+      {
+        bg_color: 'RGBA(115, 165, 213, 0.6)',
+        title: '10岁以上'
       }
     ]
   },

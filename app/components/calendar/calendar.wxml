@@ -23,8 +23,8 @@
         <!-- 日期行 -->
         <view class="calendar-row">
           <block wx:for="{{days_array[i]}}"  wx:for-item="day" wx:key="">
-            <view class="calendar-cell" style="background: {{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" wx:if="{{day.day <= 0}}"></view>
-            <view class="calendar-cell " style="background: {{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" wx:elif="{{activeType == 'square'}}" bindtap="dayClick" data-day="{{day}}">
+            <view class="calendar-cell" style="background-image: {{day.backgroundimg}};background:{{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" data-type='{{day.checked}}' wx:if="{{day.day <= 0}}"></view>
+            <view class="calendar-cell " style="background-image: {{day.backgroundimg}};background:{{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" data-type='{{day.checked}}' wx:elif="{{activeType == 'square'}}" bindtap="dayClick" data-day="{{day}}">
               <block wx:if="{{day.info == 'prev'}}">
                 <text class="calendar-day" style="color: {{day.color}};">{{day.label}}</text>
                 <block wx:if="{{addon == 'lunar'}}">
@@ -89,7 +89,7 @@
                 </block>
               </block>
             </view>
-            <view class="calendar-cell cell-rounded " style="background: {{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" wx:else bindtap="dayClick" data-day="{{day}}">
+            <view class="calendar-cell cell-rounded " style="background-image: {{day.backgroundimg}};background:{{day.background}}; width: {{cellSize}}px; height: {{cellSize}}px;" data-type='{{day.checked}}' wx:else bindtap="dayClick" data-day="{{day}}">
               <block wx:if="{{day.info == 'prev'}}">
                 <text class="calendar-day" style="color: {{day.color}};">{{day.day}}</text>
                 <block wx:if="{{addon == 'lunar'}}">

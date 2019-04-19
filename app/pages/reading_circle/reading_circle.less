@@ -93,13 +93,13 @@ page {
           font-family: SourceHanSansCN-Regular;
           font-weight: 400;
           color: rgba(163, 211, 255, 1);
-          margin-top: 5rpx;
+          margin-top: 10rpx;
         }
       }
       .head_number {
         width: 130rpx;
         height: 100%;
-        // .bg_color(red);
+        // ;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -108,7 +108,8 @@ page {
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -webkit-box-pack: center;
+        justify-content: center;
       }
       .head_number_2 {
         width: 220rpx;
@@ -122,7 +123,8 @@ page {
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-pack: distribute;
-        justify-content: space-around;
+        -webkit-box-pack: center;
+        justify-content: center;
       }
       .number {
         font-size: 24rpx;
@@ -132,7 +134,7 @@ page {
         display: flex;
         -ms-flex-line-pack: center;
         align-content: center;
-        margin-top: 20rpx;
+        margin-top: 15rpx;
       }
       .other {
         // font-size: 24rpx;
@@ -230,8 +232,7 @@ page {
         -ms-flex-pack: center;
         justify-content: center;
         .icon {
-          .wh(36rpx);
-          .bg_color(red);
+          .wh(40rpx);
         }
         .title {
           font-size: 30rpx;
@@ -277,15 +278,11 @@ page {
     text-indent: 30rpx;
   }
   .scope {
-    width: 100%;
-    height: auto;
+    width: 99rpx;
+    height: 75rpx;
+    display: block;
+    margin: 0 auto;
     margin-top: 50rpx;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: RGBA(153, 153, 153, 1);
-    font-size: 24rpx;
   }
 }
 /*书友*/
@@ -312,8 +309,9 @@ page {
       color: rgba(51, 51, 51, 1);
     }
     .title_scope {
-      font-size: 28rpx;
-      color: RGBA(68, 138, 202, 1);
+      display: block;
+      width: 133rpx;
+      height: 35rpx;
     }
   }
   .book_list {
@@ -412,6 +410,47 @@ page {
     .br_rds(30rpx);
     .bg_color(RGBA(237, 237, 237, 1));
     margin-top: 30rpx;
+    @box();
+    padding: 0rpx 20rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font-size: 30rpx;
+    color: RGBA(174, 174, 174, 1);
+    .search_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      .serch_ipt {
+        width: 430rpx;
+        height: 100%;
+        font-size: 28rpx;
+        color: RGBA(174, 174, 174, 1);
+        margin-right: 20rpx;
+      }
+      .iconfont {
+        margin-right: 20rpx;
+        font-size: 35rpx;
+        color: RGBA(174, 174, 174, 1);
+      }
+      .search_button {
+        color: RGBA(68, 138, 202, 1);
+        font-size: 28rpx;
+        margin-left: auto;
+      }
+    }
   }
   .seach_tab {
     width: 610rpx;
@@ -479,7 +518,6 @@ page {
     .mess_val {
       .wh(96rpx);
       .br_rds(50%);
-      .bg_color(red);
     }
     .mess_detail {
       width: 560rpx;
@@ -527,14 +565,14 @@ page {
       }
       .detail_res {
         width: 100%;
-        margin-top: 32rpx;
+        margin-top: 22rpx;
         .res_text {
           color: rgba(51, 51, 51, 1);
           font-size: 28rpx;
         }
         .img_group {
           width: 100%;
-          margin-top: 30rpx;
+          margin-top: 22rpx;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -565,6 +603,18 @@ page {
     -ms-flex-pack: end;
     justify-content: flex-end;
     .scope_item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      margin-left: 30rpx;
+      .scope_icon {
+        .wh(36rpx);
+        margin-right: 15rpx;
+      }
+      line-height: 36rpx;
       color: rgba(198, 198, 198, 1);
       font-size: 27rpx;
     }
