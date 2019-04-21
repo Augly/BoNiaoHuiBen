@@ -1,18 +1,25 @@
 <!-- 搜索组件 -->
 <view class="search_group">
-  <view class="search_box" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="search_box" hover-class="none" hover-stop-propagation="false">
+    <text class="iconfont icon-sousuo" selectable="false" space="false" decode="false"></text>
+    <input class="serch_ipt" type="text" placeholder="请搜索用户手机号/昵称/帖子内容" placeholder-class="serch_ipt"></input>
+    <view class="search_button" hover-class="none" hover-stop-propagation="false">搜索</view>
+  </view>
 </view>
 <!-- 筛选组件 -->
 <view class="pick_group" hover-class="none" hover-stop-propagation="false">
-  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
-  <view class="line" hover-class="none" hover-stop-propagation="false"></view>
-  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
-  <view class="line" hover-class="none" hover-stop-propagation="false"></view>
-  <view class="pick_item" hover-class="none" hover-stop-propagation="false">1</view>
+  <block wx:for="{{navtab_list}}" wx:for-index="index" wx:for-item="item">
+    <view class="pick_item {{index==navtab_list_index?'tab_item_active':''}}" bind:tap="select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false">
+      {{item.label}}
+      <text class='iconfont icon-arrLeft-fill'></text>
+    </view>
+    <view class="line" hover-class="none" hover-stop-propagation="false" wx:if="{{index<2}}"></view>
+  </block>
 </view>
 <view class="list_wrap" hover-class="none" hover-stop-propagation="false">
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="list" hover-class="none" hover-stop-propagation="false" bindtap='to_detail'>
+    <!-- <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view> -->
+    <image class="list_logo_group" src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
     <view class="list_detail" hover-class="none" hover-stop-propagation="false">
       <view class="list_title" hover-class="none" hover-stop-propagation="false">
         经典英语启蒙系列之——大卫不可以
@@ -24,16 +31,16 @@
         <text class="tab_item" selectable="false" space="false" decode="false">111</text>
       </view>
       <view class="list_res" hover-class="none" hover-stop-propagation="false">
-        22小时前更新  1人推荐  235人点赞
+        22小时前更新 1人推荐 235人点赞
       </view>
       <view class="list_scope" hover-class="none" hover-stop-propagation="false">
-        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="/images/getzan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="/images/share.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
     </view>
   </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="list" hover-class="none" hover-stop-propagation="false" bindtap='to_detail'>
+    <image class="list_logo_group" src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
     <view class="list_detail" hover-class="none" hover-stop-propagation="false">
       <view class="list_title" hover-class="none" hover-stop-propagation="false">
         经典英语启蒙系列之——大卫不可以
@@ -45,14 +52,20 @@
         <text class="tab_item" selectable="false" space="false" decode="false">111</text>
       </view>
       <view class="list_res" hover-class="none" hover-stop-propagation="false">
-        22小时前更新  1人推荐  235人点赞
+        22小时前更新 1人推荐 235人点赞
       </view>
       <view class="list_scope" hover-class="none" hover-stop-propagation="false">
-        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
-        <image class="list_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="/images/getzan.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+        <image class="list_icon" src="/images/share.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
     </view>
+  </view>
+</view>
+<view class="wrap" hover-class="none" hover-stop-propagation="false" style="width:100%;height:{{wrap_height}}px" wx:if="{{mask}}" bindtap='hide_mask'>
+  <view class="wrap_item {{item.checked?'wrap_item_active':''}}" catchtap="wrap_select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{navtab_list[navtab_list_index].list}}" wx:for-item="item" wx:for-index="index">
+    {{item.label}}
+    <text class="iconfont  icon-gou" selectable="false" space="false" decode="false" wx:if="{{item.checked}}"></text>
   </view>
 </view>
 <!-- 固定导航 -->
-<view class="flxed_nav" hover-class="none" hover-stop-propagation="false">创建书单</view>
+<view class="flxed_nav" hover-class="none" hover-stop-propagation="false" bindtap='to_creat'>创建书单</view>

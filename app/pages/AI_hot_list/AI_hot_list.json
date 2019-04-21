@@ -1,4 +1,5 @@
 {
   "navigationBarTitleText": "A.I.热书榜",
-  "usingComponents": {}
+  "usingComponents": {
+    "start": "/components/start/start"}
 }

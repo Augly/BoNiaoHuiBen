@@ -8,19 +8,27 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
+
 page {
   .bg_color(RGBA(239, 239, 244, 1));
 }
+
 .bg_color(@color) {
   background-color: @color;
 }
@@ -33,6 +41,7 @@ page {
   width: @h;
   height: @h;
 }
+
 /*提示框样式*/
 .tip_group {
   width: 100%;
@@ -48,22 +57,26 @@ page {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
   .tip_icon {
     .wh(16rpx);
     .bg_color(RGBA(68, 138, 202, 1));
     .br_rds(50%);
   }
+
   .tip_title {
     font-size: 28rpx;
     color: rgba(51, 51, 51, 1);
     margin-left: 21rpx;
   }
+
   .tip_edit {
     font-size: 30rpx;
     color: rgba(68, 138, 202, 1);
     margin-left: auto;
   }
 }
+
 /*搜索组件样式*/
 .search_group {
   width: 100%;
@@ -74,6 +87,7 @@ page {
   padding: 0rpx 20rpx;
   position: fixed;
   top: 85rpx;
+
   .search_box {
     width: 100%;
     height: 60rpx;
@@ -88,6 +102,7 @@ page {
     // justify-content: space-around;
     @box();
     padding: 0rpx 20rpx;
+
     .serch_ipt {
       width: 430rpx;
       height: 100%;
@@ -95,11 +110,13 @@ page {
       color: RGBA(174, 174, 174, 1);
       margin-right: 20rpx;
     }
+
     .iconfont {
       margin-right: 20rpx;
       font-size: 35rpx;
       color: RGBA(174, 174, 174, 1);
     }
+
     .search_button {
       color: RGBA(68, 138, 202, 1);
       font-size: 28rpx;
@@ -107,16 +124,19 @@ page {
     }
   }
 }
+
 .select {
   .wh(40rpx);
   .bg_color(red);
 }
+
 /*书架列表*/
 .book_wrap {
   width: 100%;
   height: auto;
   padding-top: 176rpx;
   padding-bottom: 88rpx;
+
   .book_item {
     width: 100%;
     .bg_color(white);
@@ -129,20 +149,24 @@ page {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
     .icon-unxuanze {
       font-size: 40rpx;
       color: RGBA(174, 174, 174, 1);
     }
+
     .icon-xuanze {
       font-size: 40rpx;
       color: RGBA(68, 138, 202, 1);
     }
+
     .item_logo {
       width: 130rpx;
       height: 134rpx;
       // .bg_color(yellow);
       margin-left: 30rpx;
     }
+
     .item_res {
       width: 400rpx;
       height: 134rpx;
@@ -151,6 +175,7 @@ page {
       font-size: 26rpx;
       color: rgba(87, 87, 87, 1);
     }
+
     .cha {
       .wh(18rpx);
       // .bg_color(black);
@@ -174,24 +199,29 @@ page {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
   .title {
     font-size: 32rpx;
     color: rgba(51, 51, 51, 1);
     margin-left: 30rpx;
   }
+
   .icon-unxuanze {
     font-size: 40rpx;
     color: RGBA(174, 174, 174, 1);
   }
+
   .icon-xuanze {
     font-size: 40rpx;
     color: RGBA(68, 138, 202, 1);
   }
+
   .number {
     .title;
     margin-left: auto;
     margin-right: 20rpx;
   }
+
   .sure {
     width: 180rpx;
     height: 87rpx;

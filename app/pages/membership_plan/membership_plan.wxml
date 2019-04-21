@@ -7,7 +7,7 @@
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-      <text class='iconfont icon-xuanze'></text>
+      <text class="iconfont icon-xuanze {{list[0]?'active':''}}" bindtap='select' data-index='0' ></text>
       <!-- <image class="card_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image> -->
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
@@ -34,7 +34,7 @@
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-     <text class='iconfont icon-xuanze'></text>
+      <text class="iconfont icon-xuanze {{list[1]?'active':''}}" bindtap='select' data-index='1' ></text>
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
       <view class="tab_item" hover-class="none" hover-stop-propagation="false">
@@ -60,7 +60,7 @@
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-      <text class='iconfont icon-xuanze'></text>
+       <text class="iconfont icon-xuanze {{list[2]?'active':''}}" bindtap='select' data-index='2' ></text>
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
       <view class="tab_item" hover-class="none" hover-stop-propagation="false">

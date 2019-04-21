@@ -8,16 +8,23 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
+
 .bg_color(@color) {
   background-color: @color;
 }
@@ -30,6 +37,7 @@
   width: @h;
   height: @h;
 }
+
 /*搜索组件*/
 .seach_group {
   width: 100%;
@@ -43,11 +51,12 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
   .search_box {
-    width: 100%;
+    width: 570rpx;
     height: 70rpx;
     .br_rds(30rpx);
     .bg_color(RGBA(255, 255, 255, 1));
@@ -62,25 +71,66 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
+    .seach_picker {
+      width: 150rpx;
+      height: 44rpx;
+      border-right: 1rpx solid RGBA(215, 215, 215, 1);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 30rpx;
+      color: rgba(156, 156, 156, 1);
+
+      .icon-arrLeft-fill {
+        color: rgba(135, 135, 135, 1);
+        font-size: 24rpx;
+        margin-left: 10rpx;
+      }
+    }
+
     .serch_ipt {
-      width: 500rpx;
+      width: 260rpx;
       height: 100%;
       font-size: 28rpx;
       color: RGBA(174, 174, 174, 1);
       margin-right: 20rpx;
     }
+
     .iconfont {
-      margin-right: 20rpx;
+      margin-right: 0rpx;
       font-size: 35rpx;
       color: RGBA(174, 174, 174, 1);
     }
-    .search_button {
-      color: rgba(68, 138, 202, 1);
-      font-size: 30rpx;
-      margin-left: auto;
-    }
+
+
+  }
+
+  .search_button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28rpx;
+    width: 126rpx;
+    height: 60rpx;
+    background: rgba(68, 138, 202, 1);
+    border-radius: 30rpx;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
+
 /*选项*/
 .tab_group {
   width: 100%;
@@ -96,6 +146,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1rpx solid RGBA(241, 241, 241, 1);
+
   .tab_item {
     width: 33.33%;
     height: 100%;
@@ -114,8 +165,10 @@
     -ms-flex-pack: center;
     justify-content: center;
   }
+
   .tab_item_active {
     color: rgba(68, 138, 202, 1);
+
     &::after {
       content: '';
       width: 40rpx;
@@ -142,12 +195,14 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   .hot_list {
-    width: 374rpx;
+    width: 375rpx;
     height: 500rpx;
-    @box();
+
     padding: 20rpx;
-    border: 1rpx solid RGBA(239, 239, 244, 1);
+    border: 2rpx solid RGBA(239, 239, 244, 1);
+    @box();
     border-top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -159,9 +214,33 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
     .hot_list_logo {
       .wh(334rpx);
+      position: relative;
+
+      .bt_bard {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 83rpx;
+        height: 40rpx;
+        border-radius: 20rpx 0rpx 0rpx 20rpx;
+        background: rgba(74, 144, 226, 1);
+        font-size: 18rpx;
+        color: rgba(255, 255, 255, 1);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
     }
+
     .hot_list_res {
       width: 294rpx;
       height: 80rpx;
@@ -170,6 +249,7 @@
       font-size: 22rpx;
       color: rgba(83, 83, 83, 1);
     }
+
     .hot_list_label {
       width: 294rpx;
       height: 40rpx;
@@ -177,15 +257,17 @@
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+
       .label {
         .bg_color(RGBA(238, 238, 238, 1));
-        line-height: 40rpx;
+        line-height: 36rpx;
         padding: 0rpx 10rpx;
         .br_rds(10rpx);
         font-size: 20rpx;
         color: rgba(135, 135, 135, 1);
         margin-right: 10rpx;
       }
+
       .icon {
         .wh(38rpx);
         margin-left: auto;

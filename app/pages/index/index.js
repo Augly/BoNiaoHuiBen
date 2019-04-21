@@ -161,7 +161,50 @@ Page({
       }
     ]
   },
-
+  to_help(){
+    wx.navigateTo({
+      url: '/pages/interactive_list/interactive_list',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  to_detail(){
+    wx.navigateTo({
+      url: '/pages/details/details',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  to_al(){
+    wx.navigateTo({
+      url: '/pages/AI_hot_list/AI_hot_list',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  //去搜索
+  to_seach(){
+    wx.navigateTo({
+      url: '/pages/seach/seach',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  go_tab(e){
+    console.log(e)
+    if (e.currentTarget.dataset.index==0){
+      wx.navigateTo({
+        url: '/pages/books_select/books_select',
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+  }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

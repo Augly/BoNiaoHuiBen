@@ -1,5 +1,5 @@
 <!-- 搜索组件 -->
-<view class="search_group">
+<view class="search_group" bindtap='to_seach'>
   <view class="search_box" hover-class="none" hover-stop-propagation="false">
     <text class="iconfont icon-sousuo" selectable="false" space="false" decode="false"></text>
     绘本搜索
@@ -18,19 +18,19 @@
 <!-- tab组件 -->
 <view class="tab_group" hover-class="none" hover-stop-propagation="false">
   <block wx:for="{{tabList}}" wx:for-item="item">
-    <view class="tab_item" hover-class="none" hover-stop-propagation="false">
+    <view class="tab_item" hover-class="none" hover-stop-propagation="false" bindtap='go_tab' data-index='{{index}}'>
       <image class="tab_banner" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
       <text class="tab_title" selectable="false" space="false" decode="false">{{item.title}}</text>
     </view>
   </block>
 </view>
 <view class="hd_book" hover-class="none" hover-stop-propagation="false">
-  <view class="hd_item" hover-class="none" hover-stop-propagation="false">
+  <view class="hd_item" hover-class="none" hover-stop-propagation="false" bindtap='to_help'>
     <image class="hd_icon" src="/images/hudong.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="hd_title" selectable="false" space="false" decode="false">互动书单</text>
   </view>
   <view class="line" hover-class="none" hover-stop-propagation="false"></view>
-  <view class="hd_item" hover-class="none" hover-stop-propagation="false">
+  <view class="hd_item" hover-class="none" hover-stop-propagation="false" bindtap='to_al'>
     <image class="hd_icon" src="/images/aihot.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="hd_title" selectable="false" space="false" decode="false">A.I.热书榜</text>
   </view>
@@ -178,7 +178,7 @@
     </view>
   </view>
   <view class="hot_group" hover-class="none" hover-stop-propagation="false">
-    <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:for-item="item">
+    <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:for-item="item" bindtap='to_detail'>
       <image class="hot_list_logo" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
       <view class="hot_list_res" hover-class="none" hover-stop-propagation="false">
         {{item.title}}

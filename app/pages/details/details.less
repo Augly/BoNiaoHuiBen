@@ -8,16 +8,22 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
 
 .bg_color(@color) {
   background-color: @color;
@@ -91,6 +97,19 @@
   width: 100%;
   height: auto;
   @bor_20();
+  @box();
+  padding: 20rpx;
+
+  .introduction_title {
+    font-size: 34rpx;
+    color: rgba(51, 51, 51, 1);
+  }
+
+  .introduction_pro {
+    width: 100%;
+    height: 1422rpx;
+
+  }
 }
 
 /*用户评论*/
@@ -145,7 +164,7 @@
       .comment_list_head_val {
         .wh(70rpx);
         .br_rds(50%);
-        .bg_color(red);
+
       }
 
       .comment_list_head_userName {
@@ -201,16 +220,19 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
     .item_icon {
       width: 40rpx;
       height: 40rpx;
-      .bg_color(red);
+
     }
+
     .item_title {
       font-size: 23rpx;
       color: rgba(143, 143, 143, 1);
       margin-top: 16rpx;
     }
+
     .badge {
       position: absolute;
       right: 10rpx;

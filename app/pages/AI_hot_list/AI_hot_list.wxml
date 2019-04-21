@@ -1,61 +1,28 @@
 <view class="tab_wrap" hover-class="none" hover-stop-propagation="false">
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">最热</view>
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">年龄</view>
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">时间</view>
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">语言</view>
+  <view class="tab_item {{index==navtab_list_index?'tab_item_active':''}}" bind:tap="select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{navtab_list}}" wx:for-index="index" wx:for-item="item">
+    {{item.label}}
+    <text class='iconfont icon-arrLeft-fill'></text>
+  </view>
 </view>
 <scroll-view class="left" style='height:{{height}}px' scroll-x="false" scroll-y="true" scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="true" enable-back-to-top="false" bindscrolltoupper="" bindscrolltolower="" bindscroll="">
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item left_item_active" hover-class="none" hover-stop-propagation="false">
-    全部
+  <view class="left_item {{tab_index==index?'left_item_active':''}}" bind:tap="handel_tab" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
+    {{item.label}}
   </view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
-  <view class="left_item" hover-class="none" hover-stop-propagation="false">全部</view>
 </scroll-view>
 <!-- <view class="left" hover-class="none" hover-stop-propagation="false"></view> -->
 <scroll-view class="right" style='height:{{height}}px' scroll-x="false" scroll-y="true" scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="true" enable-back-to-top="false" bindscrolltoupper="" bindscrolltolower="" bindscroll="">
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
+  <view class="list" hover-class="none" hover-stop-propagation="false" wx:for="{{list}}" wx:for-item="item" wx:for-index="index" bindtap='to_detail'>
+    <view class="list_logo" hover-class="none" hover-stop-propagation="false">
+      <image class="logo_val" src="/images/20190419114145.jpg" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
     </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
     <view class="list_detail" hover-class="none" hover-stop-propagation="false">
       <view class="list_title" hover-class="none" hover-stop-propagation="false">
         [原版] Anthony Brown
       </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
+      <view class="list_start" hover-class="none" hover-stop-propagation="false">
+        <start score="{{score}}" only-read="{{read}}"></start>
+        <text class='red'>9.2分</text>
+      </view>
       <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
         <text class="red" selectable="false" space="false" decode="false">1280</text>
         人阅读
@@ -69,168 +36,13 @@
       <view class="list_tab" hover-class="none" hover-stop-propagation="false">
         <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
       </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
-    </view>
-  </view>
-  <view class="list" hover-class="none" hover-stop-propagation="false">
-    <view class="list_logo" hover-class="none" hover-stop-propagation="false"></view>
-    <view class="list_detail" hover-class="none" hover-stop-propagation="false">
-      <view class="list_title" hover-class="none" hover-stop-propagation="false">
-        [原版] Anthony Brown
-      </view>
-      <view class="list_start" hover-class="none" hover-stop-propagation="false">1</view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人阅读
-        <text class="red" selectable="false" space="false" decode="false">,5760</text>
-        人借过
-      </view>
-      <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">
-        <text class="red" selectable="false" space="false" decode="false">1280</text>
-        人评论
-      </view>
-      <view class="list_tab" hover-class="none" hover-stop-propagation="false">
-        <text class="list_tab_item" selectable="false" space="false" decode="false">3-6岁</text>
-      </view>
-      <view class="icon" hover-class="none" hover-stop-propagation="false"></view>
+      <image class="icon" src="/images/favar.png" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
     </view>
   </view>
 </scroll-view>
+<view class="wrap" hover-class="none" hover-stop-propagation="false" style="width:100%;height:{{wrap_height}}px" wx:if="{{mask}}" bindtap='hide_mask'>
+  <view class="wrap_item {{item.checked?'wrap_item_active':''}}" catchtap="wrap_select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{navtab_list[navtab_list_index].list}}" wx:for-item="item" wx:for-index="index">
+    {{item.label}}
+    <text class="iconfont  icon-gou" selectable="false" space="false" decode="false" wx:if="{{item.checked}}"></text>
+  </view>
+</view>

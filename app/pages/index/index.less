@@ -8,24 +8,36 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
+
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
+
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
+
 .bg_color(@color) {
   background-color: @color;
 }
+
 .br_rds(@Degrees) {
   border-radius: @Degrees;
 }
+
 .wh(@h) {
   width: @h;
   height: @h;
 }
+
 /*搜索组件样式*/
 .search_group {
   width: 100%;
@@ -34,6 +46,7 @@
   @flex_center();
   @box();
   padding: 0rpx 20rpx;
+
   .search_box {
     width: 100%;
     height: 60rpx;
@@ -49,6 +62,7 @@
     color: RGBA(200, 200, 200, 1);
     .br_rds(60rpx);
     .bg_color(white);
+
     .iconfont {
       margin-right: 20rpx;
       font-size: 35rpx;
@@ -61,15 +75,18 @@
 .banner {
   width: 100%;
   height: 100%;
+
   & .slide-image {
     width: 100%;
     height: 300rpx;
   }
 }
+
 /*tab组件*/
 .tab_group {
   width: 100%;
   overflow: hidden;
+
   & .tab_item {
     width: 25%;
     height: 180rpx;
@@ -87,16 +104,19 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
     & .tab_banner {
       .wh(88rpx);
       .br_rds(50%);
     }
+
     & .tab_title {
       font-size: 24rpx;
       margin-top: 15rpx;
     }
   }
 }
+
 .hd_book {
   width: 100%;
   height: 132rpx;
@@ -110,6 +130,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+
   .hd_item {
     width: 374rpx;
     height: 100%;
@@ -119,10 +140,12 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
     .hd_icon {
       .wh(67rpx);
       margin-left: 75rpx;
     }
+
     .hd_title {
       font-size: 34rpx;
       font-family: SourceHanSansCN-Regular;
@@ -131,12 +154,14 @@
       margin-left: 11rpx;
     }
   }
+
   .line {
     width: 2rpx;
     height: 75rpx;
     .bg_color(RGBA(234, 234, 234, 1));
   }
 }
+
 /*福利板块*/
 .wel_fare {
   width: 100%;
@@ -162,6 +187,7 @@
   justify-content: space-between;
   .bg_color(RGBA(240, 242, 245, 1));
   @bor_20();
+
   .plate_item {
     width: 374rpx;
     height: 164rpx;
@@ -169,6 +195,7 @@
     .bg_color(white);
   }
 }
+
 .title_group {
   width: 100%;
   height: 92rpx;
@@ -183,6 +210,7 @@
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1rpx solid RGBA(240, 242, 245, 1);
+
   &:before {
     position: absolute;
     content: '';
@@ -191,27 +219,32 @@
     background: rgba(68, 138, 202, 1);
     border-radius: 4rpx;
   }
+
   .title {
     font-size: 36rpx;
     font-weight: 500;
     color: rgba(68, 138, 202, 1);
     margin-left: 20rpx;
   }
+
   .more {
     font-size: 30rpx;
     font-family: SourceHanSansCN-Regular;
     font-weight: 400;
     color: rgba(153, 153, 153, 1);
     margin-left: auto;
+
     .iconfont {
       font-size: 20rpx;
     }
   }
 }
+
 /*点读专区*/
 .reading_area {
   width: 100%;
   height: auto;
+
   .reading_group {
     width: 100%;
     height: auto;
@@ -227,6 +260,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     .bg_color(RGBA(240, 242, 245, 1));
+
     .read_item {
       width: 374rpx;
       height: 200rpx;
@@ -243,17 +277,20 @@
       -ms-flex-pack: justify;
       justify-content: space-between;
       border-top: 2rpx solid RGBA(240, 242, 245, 1);
+
       .read_item_logo {
         width: 122rpx;
         height: 122rpx;
         //
       }
+
       .read_item_more {
         width: 180rpx;
         font-size: 30rpx;
         font-weight: 400;
         text-align: right;
         color: rgba(51, 51, 51, 1);
+
         .iconfont {
           font-size: 20rpx;
           color: RGBA(155, 155, 155, 1);
@@ -267,6 +304,7 @@
 .Age_zone {
   width: 100%;
   height: auto;
+
   .Age_group {
     width: 100%;
     height: 140rpx;
@@ -281,6 +319,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .age_group_item {
       width: 170rpx;
       height: 100rpx;
@@ -292,13 +331,16 @@
     }
   }
 }
+
 .br50 {
   .br_rds(50%);
 }
+
 /*特色人物*/
 .special_characters {
   width: 100%;
   height: auto;
+
   .special_group {
     width: 100%;
     height: 270rpx;
@@ -310,6 +352,7 @@
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+
     .special_item {
       width: 158rpx;
       height: 100%;
@@ -326,11 +369,13 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+
       // padding: 0 51rpx;
       .special_item_logo {
         display: block;
         .wh(158rpx);
       }
+
       .special_item_title {
         font-size: 26rpx;
         font-weight: 400;
@@ -345,6 +390,7 @@
 .book_list {
   width: 100;
   height: auto;
+
   .book_group {
     width: 100%;
     height: 200rpx;
@@ -357,6 +403,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .book_item {
       width: 372rpx;
       height: 200rpx;
@@ -367,12 +414,14 @@
       -ms-flex-align: center;
       align-items: center;
       .bg_color(rgba(68, 138, 202, 1));
+
       .book_item_logo {
         width: 108rpx;
         height: 108rpx;
         border: 5rpx solid rgba(159, 209, 255, 1);
         margin-left: 58rpx;
       }
+
       .book_item_res {
         width: 170rpx;
         display: -webkit-box;
@@ -386,10 +435,12 @@
         -ms-flex-pack: center;
         justify-content: center;
         margin-left: 40rpx;
+
         .book_title {
           font-size: 36rpx;
           color: rgba(255, 255, 255, 1);
         }
+
         .book_mintitle {
           font-size: 28rpx;
           color: rgba(255, 255, 255, 1);
@@ -400,6 +451,7 @@
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
+
           .iconfont {
             font-size: 20rpx;
             // line-height: 28rpx;
@@ -414,6 +466,7 @@
 .hot_zoom {
   width: 100;
   height: auto;
+
   .hot_group {
     width: 100%;
     height: auto;
@@ -425,6 +478,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .hot_list {
       width: 375rpx;
       height: 500rpx;
@@ -442,9 +496,11 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+
       .hot_list_logo {
         .wh(334rpx);
       }
+
       .hot_list_res {
         width: 294rpx;
         height: 80rpx;
@@ -453,6 +509,7 @@
         font-size: 22rpx;
         color: rgba(83, 83, 83, 1);
       }
+
       .hot_list_label {
         width: 294rpx;
         height: 40rpx;
@@ -460,6 +517,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+
         .label {
           .bg_color(RGBA(238, 238, 238, 1));
           line-height: 40rpx;
@@ -469,6 +527,7 @@
           color: rgba(135, 135, 135, 1);
           margin-right: 10rpx;
         }
+
         .icon {
           .wh(38rpx);
           margin-left: auto;

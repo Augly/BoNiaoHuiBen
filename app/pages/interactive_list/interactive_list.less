@@ -8,19 +8,27 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
+
 .marT20 {
   margin-top: 20rpx;
 }
+
 .bg_color(@color) {
   background-color: @color;
 }
@@ -33,11 +41,13 @@
   width: @h;
   height: @h;
 }
+
 // page {
 //   @box();
 //   padding-bottom: 100rpx;
 //   .bg_color(RGBA(239, 239, 244, 1));
 // }
+/*搜索组件样式*/
 /*搜索组件样式*/
 .search_group {
   width: 100%;
@@ -47,14 +57,45 @@
   @box();
   padding: 0rpx 20rpx;
   position: fixed;
-  top: 0;
+  top: 0rpx;
+
   .search_box {
     width: 100%;
     height: 60rpx;
     .br_rds(60rpx);
     .bg_color(white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    // justify-content: space-around;
+    @box();
+    padding: 0rpx 20rpx;
+
+    .serch_ipt {
+      width: 430rpx;
+      height: 100%;
+      font-size: 28rpx;
+      color: RGBA(174, 174, 174, 1);
+      margin-right: 20rpx;
+    }
+
+    .iconfont {
+      margin-right: 20rpx;
+      font-size: 35rpx;
+      color: RGBA(174, 174, 174, 1);
+    }
+
+    .search_button {
+      color: RGBA(68, 138, 202, 1);
+      font-size: 28rpx;
+      margin-left: auto;
+    }
   }
 }
+
 /*筛选组件*/
 .pick_group {
   width: 100%;
@@ -72,6 +113,7 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-bottom: 1rpx solid RGBA(234, 234, 234, 1);
+
   .pick_item {
     width: 260rpx;
     height: 100%;
@@ -88,7 +130,24 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    .icon-arrLeft-fill {
+      color: rgba(135, 135, 135, 1);
+      font-size: 24rpx;
+      margin-left: 10rpx;
+    }
   }
+
+  .tab_item_active {
+    color: #448ACA;
+
+    .icon-arrLeft-fill {
+      color: #448ACA;
+      font-size: 24rpx;
+      margin-left: 10rpx;
+    }
+  }
+
   .line {
     width: 2rpx;
     height: 44rpx;
@@ -99,6 +158,7 @@
 /*列表组件*/
 .list_wrap {
   margin-top: 175rpx;
+
   .list {
     width: 750rpx;
     // height: 281rpx;
@@ -108,27 +168,42 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+
     -webkit-box-pack: justify;
+
     -ms-flex-pack: justify;
+
     justify-content: space-between;
+
     .list_logo_group {
       .wh(210rpx);
-      .bg_color(red);
+
     }
+
     .list_detail {
       width: 450rpx;
+
       // height: 210rpx;
       .list_title {
         width: 100%;
         font-size: 28rpx;
         color: rgba(51, 51, 51, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
+
       .list_tab {
         width: 100%;
         height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 8rpx;
+
         .tab_item {
           height: 38rpx;
           line-height: 38rpx;
@@ -141,11 +216,19 @@
           margin-right: 14rpx;
         }
       }
+
       .list_res {
         font-size: 26rpx;
         color: rgba(178, 178, 178, 1);
-        margin-top: 10rpx;
+        margin-top: 8rpx;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
       }
+
       .list_scope {
         width: 100%;
         height: auto;
@@ -158,16 +241,18 @@
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end;
-        margin-top: 20rpx;
+        margin-top: 10rpx;
+
         .list_icon {
           .wh(34rpx);
-          .bg_color(red);
+
           margin-left: 30rpx;
         }
       }
     }
   }
 }
+
 .flxed_nav {
   width: 104rpx;
   height: 104rpx;
@@ -191,4 +276,41 @@
   justify-content: center;
   font-size: 28rpx;
   color: rgba(255, 255, 255, 1);
+}
+
+.wrap {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+
+  .wrap_item {
+    width: 100%;
+    height: 78rpx;
+    @box();
+    padding: 0rpx 50rpx;
+    font-size: 26rpx;
+    color: rgba(135, 135, 135, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .icon-gou {
+      font-size: 26rpx;
+      color: rgba(68, 138, 202, 1);
+    }
+
+    .bg_color(white);
+    border-bottom: 1rpx solid RGBA(225, 225, 225, 1);
+  }
+
+  .wrap_item_active {
+    color: rgba(68, 138, 202, 1);
+  }
 }

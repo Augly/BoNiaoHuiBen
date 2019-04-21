@@ -1,18 +1,27 @@
 <view class="seach_group" hover-class="none" hover-stop-propagation="false">
   <view class="search_box" hover-class="none" hover-stop-propagation="false">
+    <picker mode="multiSelector" range="{{multiArray}}" value='{{multiIndex}}' bindcolumnchange="bindMultiPickerColumnChange" bindchange="bindMultiPickerChange">
+      <view class="seach_picker" hover-class="none" hover-stop-propagation="false">
+        {{label}}
+        <text class='iconfont icon-arrLeft-fill'></text>
+      </view>
+    </picker>
     <text class="iconfont icon-sousuo" selectable="false" space="false" decode="false"></text>
-    <input class="serch_ipt" type="text" placeholder="" placeholder-class="serch_ipt"></input>
-    <view class="search_button" hover-class="none" hover-stop-propagation="false">搜索</view>
+    <input class="serch_ipt" type="text" placeholder="请输入书名" placeholder-class="serch_ipt"></input>
   </view>
+  <view class="search_button" hover-class="none" hover-stop-propagation="false">搜索</view>
 </view>
 <view class="tab_group" hover-class="none" hover-stop-propagation="false">
-  <view class="tab_item tab_item_active" hover-class="none" hover-stop-propagation="false">综合</view>
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">销量</view>
-  <view class="tab_item" hover-class="none" hover-stop-propagation="false">最新</view>
+  <view class="tab_item {{index==tab_index?'tab_item_active':''}}" hover-class="none" bind:tap="select_tab" data-index="{{index}}" hover-stop-propagation="false" wx:for="{{tab_list}}" wx:for-item="item" wx:for-index="index">
+    {{item.label}}
+  </view>
 </view>
 <view class="hot_group" hover-class="none" hover-stop-propagation="false">
   <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:for-item="item">
-    <image class="hot_list_logo" src="{{item.src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+    <view class="hot_list_logo" hover-class="none" hover-stop-propagation="false">
+      <image class="hot_list_logo" src="{{item.src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      <view class="bt_bard" hover-class="none" hover-stop-propagation="false">已借完</view>
+    </view>
     <view class="hot_list_res" hover-class="none" hover-stop-propagation="false">
       {{item.title}}
     </view>

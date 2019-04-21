@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[false,false,false]
   },
 
   /**
@@ -14,7 +14,16 @@ Page({
   onLoad: function (options) {
 
   },
-
+  select(e){
+    let s = this.data.list.map((item)=>{
+      item=false
+      return item
+    })
+    s[e.currentTarget.dataset.index]=true
+    this.setData({
+      list:s
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

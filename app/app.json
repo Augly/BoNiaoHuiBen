@@ -1,17 +1,17 @@
 {
   "pages": [
-    "pages/AI_hot_list/AI_hot_list",
-    "pages/membership_plan/membership_plan",
-    "pages/seach/seach",
-    "pages/my/my",
-    "pages/reading_circle/reading_circle",
     "pages/index/index",
-
-    "pages/interactive_list/interactive_list",
     "pages/create_book_list/create_book_list",
-    "pages/bookshelf/bookshelf",
+    "pages/books_select/books_select",
     "pages/details/details",
-    "pages/books_select/books_select"
+    "pages/my/my",
+    "pages/AI_hot_list/AI_hot_list",
+    "pages/seach/seach",
+    "pages/membership_plan/membership_plan",
+    "pages/interactive_list/interactive_list",
+    "pages/bookshelf/bookshelf",
+    "pages/reading_circle/reading_circle"
+ 
   ],
   "window": {
     "backgroundTextStyle": "light",

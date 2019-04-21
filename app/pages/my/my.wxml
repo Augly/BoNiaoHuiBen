@@ -114,7 +114,7 @@
 </view>
 <!-- 功能导航 -->
 <view class="navigation" hover-class="none" hover-stop-propagation="false">
-  <view class="list" hover-class="none" hover-stop-propagation="false">
+  <view class="list" hover-class="none" hover-stop-propagation="false" bindtap='my_mumber'>
     <image class="list_logo" src="/images/nt_member.png" mode="widthFix" lazy-load="false" binderror="" bindload=""></image>
     <text class="list_title" selectable="false" space="false" decode="false">我的会员</text>
     <view class="list_mintitle" hover-class="none" hover-stop-propagation="false">购买会员计划，更加划算</view>

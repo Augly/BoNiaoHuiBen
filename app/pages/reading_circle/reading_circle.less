@@ -8,16 +8,23 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-};
+}
+
+;
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-};
+}
+
+;
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-};
+}
+
+;
+
 .bg_color(@color) {
   background-color: @color;
 }
@@ -30,14 +37,17 @@
   width: @h;
   height: @h;
 }
+
 page {
   .bg_color(RGBA(239, 239, 244, 1));
 }
+
 /*头部信息*/
 .head {
   width: 100%;
   height: 760rpx;
   .bg_color(RGBA(68, 138, 202, 1));
+
   .head_title {
     width: 100%;
     height: 178rpx;
@@ -53,6 +63,7 @@ page {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .head_left {
       width: 50%;
       height: 100%;
@@ -62,12 +73,14 @@ page {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
+
       .head_val {
         width: 116rpx;
         height: 116rpx;
         border: 8rpx solid rgba(255, 255, 255, 1);
         .br_rds(50%);
       }
+
       .head_user {
         width: 200rpx;
         height: 100%;
@@ -82,12 +95,14 @@ page {
         -ms-flex-pack: center;
         justify-content: center;
         margin-left: 10rpx;
+
         .title {
           font-size: 30rpx;
           font-family: SourceHanSansCN-Regular;
           font-weight: 400;
           color: rgba(255, 255, 255, 1);
         }
+
         .mintitle {
           font-size: 26rpx;
           font-family: SourceHanSansCN-Regular;
@@ -96,6 +111,7 @@ page {
           margin-top: 10rpx;
         }
       }
+
       .head_number {
         width: 130rpx;
         height: 100%;
@@ -111,6 +127,7 @@ page {
         -webkit-box-pack: center;
         justify-content: center;
       }
+
       .head_number_2 {
         width: 220rpx;
         height: 100%;
@@ -126,6 +143,7 @@ page {
         -webkit-box-pack: center;
         justify-content: center;
       }
+
       .number {
         font-size: 24rpx;
         color: rgba(255, 255, 255, 1);
@@ -136,6 +154,7 @@ page {
         align-content: center;
         margin-top: 15rpx;
       }
+
       .other {
         // font-size: 24rpx;
         color: rgba(255, 226, 29, 1);
@@ -143,14 +162,17 @@ page {
       }
     }
   }
+
   /*线条*/
   .line {
     width: 100%;
     height: 9rpx;
     .bg_color(RGBA(61, 124, 181, 1));
   }
+
   .head_user {
     width: 100%;
+
     .head_user_title {
       font-size: 36rpx;
       font-family: SourceHanSansCN-Regular;
@@ -159,6 +181,7 @@ page {
       text-align: center;
       margin-top: 26rpx;
     }
+
     .head_user_group {
       width: 100%;
       @box();
@@ -173,6 +196,7 @@ page {
       -ms-flex-pack: justify;
       justify-content: space-between;
       margin-top: 40rpx;
+
       .head_user_item {
         width: 33%;
         height: auto;
@@ -189,12 +213,14 @@ page {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+
         .head_user_item_title {
           font-size: 36rpx;
           font-family: SourceHanSansCN-Regular;
           font-weight: 400;
           color: rgba(255, 255, 255, 1);
         }
+
         .head_user_item_mintitle {
           font-size: 26rpx;
           font-family: SourceHanSansCN-Regular;
@@ -204,6 +230,7 @@ page {
         }
       }
     }
+
     .head_user_scope {
       width: 640rpx;
       margin: 0 auto;
@@ -217,11 +244,13 @@ page {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
+
       .head_user_scope_item {
         width: 281rpx;
         height: 65rpx;
         border: 1rpx solid rgba(255, 255, 255, 1);
-        .br_rds(10rpx;);
+        .br_rds(10rpx;
+        );
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -231,9 +260,11 @@ page {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+
         .icon {
           .wh(40rpx);
         }
+
         .title {
           font-size: 30rpx;
           color: rgba(255, 255, 255, 1);
@@ -242,6 +273,7 @@ page {
       }
     }
   }
+
   .recle {
     width: 171rpx;
     height: 171rpx;
@@ -265,6 +297,7 @@ page {
     justify-content: center;
   }
 }
+
 /*日历组件*/
 .calendar_wrap {
   width: 100%;
@@ -272,11 +305,13 @@ page {
   .bg_color(white);
   @box();
   padding: 20rpx 0rpx;
+
   .title {
     color: #448aca;
     font-size: 24rpx;
     text-indent: 30rpx;
   }
+
   .scope {
     width: 99rpx;
     height: 75rpx;
@@ -285,6 +320,7 @@ page {
     margin-top: 50rpx;
   }
 }
+
 /*书友*/
 .book_friend {
   width: 100%;
@@ -293,6 +329,7 @@ page {
   padding: 50rpx;
   .bg_color(rgba(255, 255, 255, 1));
   margin-top: 22rpx;
+
   .book_head {
     width: 100%;
     display: -webkit-box;
@@ -304,16 +341,19 @@ page {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .title {
       font-size: 28rpx;
       color: rgba(51, 51, 51, 1);
     }
+
     .title_scope {
       display: block;
       width: 133rpx;
       height: 35rpx;
     }
   }
+
   .book_list {
     width: 100%;
     height: auto;
@@ -327,6 +367,7 @@ page {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 40rpx;
+
     .item {
       width: 210rpx;
       height: auto;
@@ -347,6 +388,7 @@ page {
         .br_rds(50%);
         z-index: 5;
       }
+
       .item_res {
         width: 100%;
         height: auto;
@@ -365,6 +407,7 @@ page {
         margin-top: -44rpx;
         background: rgba(243, 243, 243, 1);
         border-radius: 6rpx;
+
         // justify-content: center;
         .res_title {
           font-size: 27rpx;
@@ -372,6 +415,7 @@ page {
           text-align: center;
           margin-top: 36rpx;
         }
+
         .res_sex {
           font-size: 24rpx;
           font-family: SourceHanSansCN-Regular;
@@ -379,6 +423,7 @@ page {
           color: rgba(153, 153, 153, 1);
           margin-top: 16rpx;
         }
+
         .res_button {
           width: 114rpx;
           height: 48rpx;
@@ -404,6 +449,7 @@ page {
   .bg_color(rgba(255, 255, 255, 1));
   margin-top: 22rpx;
   overflow: hidden;
+
   .seach_wrap {
     width: 610rpx;
     height: 61rpx;
@@ -423,6 +469,7 @@ page {
     justify-content: flex-start;
     font-size: 30rpx;
     color: RGBA(174, 174, 174, 1);
+
     .search_box {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -433,6 +480,7 @@ page {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
+
       .serch_ipt {
         width: 430rpx;
         height: 100%;
@@ -440,11 +488,13 @@ page {
         color: RGBA(174, 174, 174, 1);
         margin-right: 20rpx;
       }
+
       .iconfont {
         margin-right: 20rpx;
         font-size: 35rpx;
         color: RGBA(174, 174, 174, 1);
       }
+
       .search_button {
         color: RGBA(68, 138, 202, 1);
         font-size: 28rpx;
@@ -452,6 +502,7 @@ page {
       }
     }
   }
+
   .seach_tab {
     width: 610rpx;
     height: 111rpx;
@@ -464,6 +515,7 @@ page {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .tab_item {
       width: 25%;
       height: 111rpx;
@@ -480,8 +532,10 @@ page {
       -ms-flex-pack: center;
       justify-content: center;
     }
+
     .tab_item_active {
       color: rgba(68, 138, 202, 1);
+
       &:after {
         content: '';
         bottom: 0;
@@ -504,6 +558,7 @@ page {
   height: auto;
   margin-top: 1rpx;
   .bg_color(rgba(255, 255, 255, 1));
+
   .mess_head {
     width: 100%;
     @box();
@@ -515,13 +570,16 @@ page {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+
     .mess_val {
       .wh(96rpx);
       .br_rds(50%);
     }
+
     .mess_detail {
       width: 560rpx;
       height: auto;
+
       .detail_info {
         width: 100%;
         height: 96rpx;
@@ -535,6 +593,7 @@ page {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+
         .detail_info_name {
           font-size: 27rpx;
           color: rgba(51, 51, 51, 1);
@@ -544,32 +603,39 @@ page {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
+
           .name {
             font-size: 30rpx;
             margin-right: 5rpx;
           }
+
           .age {
             margin-right: 5rpx;
           }
+
           .read_res {
             .res_number {
               color: rgba(255, 0, 0, 1);
             }
           }
         }
+
         .detail_info_time {
           font-size: 27rpx;
           color: rgba(154, 154, 154, 1);
           margin-top: 10rpx;
         }
       }
+
       .detail_res {
         width: 100%;
         margin-top: 22rpx;
+
         .res_text {
           color: rgba(51, 51, 51, 1);
           font-size: 28rpx;
         }
+
         .img_group {
           width: 100%;
           margin-top: 22rpx;
@@ -578,6 +644,7 @@ page {
           display: flex;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+
           .img_list {
             .wh(180rpx);
             border: 1rpx solid rgba(228, 228, 228, 1);
@@ -588,6 +655,7 @@ page {
       }
     }
   }
+
   .mess_scope {
     width: 100%;
     height: 100rpx;
@@ -602,6 +670,7 @@ page {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+
     .scope_item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -610,10 +679,12 @@ page {
       -ms-flex-align: stretch;
       align-items: stretch;
       margin-left: 30rpx;
+
       .scope_icon {
         .wh(36rpx);
         margin-right: 15rpx;
       }
+
       line-height: 36rpx;
       color: rgba(198, 198, 198, 1);
       font-size: 27rpx;

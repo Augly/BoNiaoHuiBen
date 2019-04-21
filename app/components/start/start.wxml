@@ -1,0 +1,5 @@
+<!--compand/start.wxml-->
+<view class='startWrap'>
+      <text class="iconfont icon-xingxing {{score<index?'':'active'}}" style="font-size:{{fontSize}}" wx:for="{{start}}" wx:for-index="index" wx:key="index" bindtap='tabStart' data-index='{{index}}'></text>
+</view>
+
