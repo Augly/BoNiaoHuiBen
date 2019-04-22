@@ -8,22 +8,16 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-;
+};
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-;
+};
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-}
-
-;
+};
 
 .bg_color(@color) {
   background-color: @color;
@@ -141,6 +135,10 @@
       .bg_color(RGBA(233, 233, 233, 1));
       margin-top: 20rpx;
       margin-right: 20rpx;
+    }
+    .select_item_active {
+      color: rgba(255, 255, 255, 1);
+      background-color: RGBA(68, 138, 202, 1);
     }
   }
 }

@@ -14,9 +14,9 @@
 </view>
 <!-- 书架列表 -->
 <view class="book_wrap" hover-class="none" hover-stop-propagation="false">
-  <view class="book_item" hover-class="none" hover-stop-propagation="false" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+  <view class="book_item" hover-class="none" hover-stop-propagation="false" wx:for="{{list}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
     <!-- <view class="select" hover-class="none" hover-stop-propagation="false"></view> -->
-    <text class="iconfont icon-unxuanze" selectable="false" space="false" decode="false"></text>
+    <text class="iconfont {{item.checked?'icon-xuanze':'icon-unxuanze'}}" selectable="false" space="false" decode="false" bindtap='select' data-index='{{index}}'></text>
     <!-- <view class="item_logo" hover-class="none" hover-stop-propagation="false"></view> -->
     <image class="item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
     <view class="item_res" hover-class="none" hover-stop-propagation="false">{{item.title}}</view>
@@ -25,7 +25,7 @@
 </view>
 <!-- 底部全选 -->
 <view class="all_select" hover-class="none" hover-stop-propagation="false">
-  <text class="iconfont icon-unxuanze" selectable="false" space="false" decode="false"></text>
+  <text class="iconfont {{all?'icon-xuanze':'icon-unxuanze'}}" selectable="false" space="false" decode="false" bindtap='all_select'></text>
   <text class="title" selectable="false" space="false" decode="false">全选</text>
   <text class="number" selectable="false" space="false" decode="false">已选：0件</text>
   <view class="sure" hover-class="none" hover-stop-propagation="false">借阅</view>

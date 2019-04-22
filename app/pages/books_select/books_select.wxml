@@ -8,66 +8,42 @@
 </view>
 <!-- 条件筛选 -->
 <view class="select_wrap" hover-class="none" hover-stop-propagation="false">
-    <view class="select_group" hover-class="none" hover-stop-propagation="false">
-        <view class="select_title" hover-class="none" hover-stop-propagation="false">
-            <text class="title" selectable="false" space="false" decode="false">年龄</text>
-            <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
-        </view>
-        <view class="select_tab" hover-class="none" hover-stop-propagation="false">
-            <text class="select_item" selectable="false" space="false" decode="false">111111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">1</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-        </view>
+  <view class="select_group" hover-class="none" hover-stop-propagation="false">
+    <view class="select_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">年龄</text>
+      <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
     </view>
-    <view class="select_group" hover-class="none" hover-stop-propagation="false">
-        <view class="select_title" hover-class="none" hover-stop-propagation="false">
-            <text class="title" selectable="false" space="false" decode="false">分类</text>
-            <text class="mintitle" selectable="false" space="false" decode="false">可多选，最多选择3类</text>
-        </view>
-        <view class="select_tab" hover-class="none" hover-stop-propagation="false">
-            <text class="select_item" selectable="false" space="false" decode="false">111111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">1</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-        </view>
+    <view class="select_tab" hover-class="none" hover-stop-propagation="false">
+      <text class="select_item {{item.checked?'select_item_active':''}}" selectable="false" space="false" decode="false" wx:for="{{age_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" bindtap='age_select' data-index='{{index}}'>{{item.label}}</text>
     </view>
-    <view class="select_group" hover-class="none" hover-stop-propagation="false">
-        <view class="select_title" hover-class="none" hover-stop-propagation="false">
-            <text class="title" selectable="false" space="false" decode="false">语言</text>
-            <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
-        </view>
-        <view class="select_tab" hover-class="none" hover-stop-propagation="false">
-            <text class="select_item" selectable="false" space="false" decode="false">111111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">1</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-        </view>
+  </view>
+  <view class="select_group" hover-class="none" hover-stop-propagation="false">
+    <view class="select_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">分类</text>
+      <text class="mintitle" selectable="false" space="false" decode="false">可多选，最多选择3类</text>
     </view>
-    <view class="select_group" hover-class="none" hover-stop-propagation="false">
-        <view class="select_title" hover-class="none" hover-stop-propagation="false">
-            <text class="title" selectable="false" space="false" decode="false">请选择本数</text>
-            <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
-        </view>
-        <view class="select_tab" hover-class="none" hover-stop-propagation="false">
-            <text class="select_item" selectable="false" space="false" decode="false">111111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">1</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-            <text class="select_item" selectable="false" space="false" decode="false">111</text>
-        </view>
+    <view class="select_tab" hover-class="none" hover-stop-propagation="false">
+      <text class="select_item {{item.checked?'select_item_active':''}}" selectable="false" space="false" decode="false" wx:for="{{class_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" bindtap='class_select' data-index='{{index}}'> {{item.label}}</text>
     </view>
+  </view>
+  <view class="select_group" hover-class="none" hover-stop-propagation="false">
+    <view class="select_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">语言</text>
+      <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
+    </view>
+    <view class="select_tab" hover-class="none" hover-stop-propagation="false">
+      <text class="select_item {{item.checked?'select_item_active':''}}" selectable="false" space="false" decode="false" wx:for="{{lange_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" bindtap='lange_select' data-index='{{index}}'>{{item.label}}</text>
+    </view>
+  </view>
+  <view class="select_group" hover-class="none" hover-stop-propagation="false">
+    <view class="select_title" hover-class="none" hover-stop-propagation="false">
+      <text class="title" selectable="false" space="false" decode="false">请选择本数</text>
+      <text class="mintitle" selectable="false" space="false" decode="false">单选</text>
+    </view>
+    <view class="select_tab" hover-class="none" hover-stop-propagation="false">
+      <text class="select_item {{item.checked?'select_item_active':''}}" selectable="false" space="false" decode="false" wx:for="{{number_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" bindtap='number_select' data-index='{{index}}'>{{item.label}}</text>
+    </view>
+  </view>
 </view>
 <!-- 确认选书 -->
 <view class="sure_group" hover-class="none" hover-stop-propagation="false">开始选书</view>

@@ -2,12 +2,12 @@
 <view class="tip" hover-class="none" hover-stop-propagation="false">往返包邮，正版图书，全面消毒</view>
 <view class="card_wrap" hover-class="none" hover-stop-propagation="false">
   <view class="title" hover-class="none" hover-stop-propagation="false">不限次卡</view>
-  <view class="card" hover-class="none" hover-stop-propagation="false">
+  <view class="card" hover-class="none" hover-stop-propagation="false" bindtap='select' data-index='0'>
     <view class="card_title" hover-class="none" hover-stop-propagation="false">
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-      <text class="iconfont icon-xuanze {{list[0]?'active':''}}" bindtap='select' data-index='0' ></text>
+      <text class="iconfont icon-xuanze {{list[0]?'active':''}}"></text>
       <!-- <image class="card_icon" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image> -->
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
@@ -29,12 +29,12 @@
       </view>
     </view>
   </view>
-  <view class="card year_card" hover-class="none" hover-stop-propagation="false">
+  <view class="card year_card" hover-class="none" hover-stop-propagation="false" bindtap='select' data-index='1'>
     <view class="card_title" hover-class="none" hover-stop-propagation="false">
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-      <text class="iconfont icon-xuanze {{list[1]?'active':''}}" bindtap='select' data-index='1' ></text>
+      <text class="iconfont icon-xuanze {{list[1]?'active':''}}"  ></text>
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
       <view class="tab_item" hover-class="none" hover-stop-propagation="false">
@@ -55,12 +55,12 @@
       </view>
     </view>
   </view>
-  <view class="card vip_year_card" hover-class="none" hover-stop-propagation="false">
+  <view class="card vip_year_card" hover-class="none" hover-stop-propagation="false" bindtap='select' data-index='2'>
     <view class="card_title" hover-class="none" hover-stop-propagation="false">
       <text class="title" selectable="false" space="false" decode="false">不限次季卡</text>
       <text class="price" selectable="false" space="false" decode="false">￥299</text>
       <text class="un_price" selectable="false" space="false" decode="false">￥499</text>
-       <text class="iconfont icon-xuanze {{list[2]?'active':''}}" bindtap='select' data-index='2' ></text>
+       <text class="iconfont icon-xuanze {{list[2]?'active':''}}"  ></text>
     </view>
     <view class="card_tab" hover-class="none" hover-stop-propagation="false">
       <view class="tab_item" hover-class="none" hover-stop-propagation="false">

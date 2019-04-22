@@ -4,10 +4,12 @@ Page({
    * 页面的初始数据
    */
   data: {
+    all:false,
     list: [
       {
         src: '/images/20190419114145.jpg',
-        title: '测试'
+        title: '测试',
+        checked:false
       }
     ]
   },
@@ -19,6 +21,40 @@ Page({
    */
   onLoad: function(options) {},
 
+  select(e) {
+    let _arr = this.data.list
+    _arr[e.currentTarget.dataset.index].checked = !_arr[e.currentTarget.dataset.index].checked
+    let s_n = 0
+    for(let s=0;s<_arr.length;s++){
+      if (_arr[s].checked) {
+        s_n++
+      }
+    }
+    if (s_n == this.data.list.length) {
+      this.setData({
+        all:true
+      })
+    } else if (s_n ==0) {
+      this.setData({
+        all: false
+      })
+    }
+    this.setData({
+      list: _arr
+    })
+  },
+  all_select(){
+    let _a=this.data.all
+    let _arr = this.data.list
+    _a=!_a
+    _arr.forEach((item) => {
+      item.checked=_a
+    });
+    this.setData({
+      all:_a,
+      list: _arr
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

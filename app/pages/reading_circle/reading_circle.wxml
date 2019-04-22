@@ -22,11 +22,13 @@
       <view class="head_number_2" hover-class="none" hover-stop-propagation="false">
         <view class="number" style="margin-top:0rpx;" hover-class="none" hover-stop-propagation="false">
           超过
-          <text class="other" selectable="false" space="false" decode="false">{{j_rate}}</text> 同龄人
+          <text class="other" selectable="false" space="false" decode="false">{{j_rate}}</text>
+          同龄人
         </view>
         <view class="number" hover-class="none" hover-stop-propagation="false">
           超过
-          <text class="other" selectable="false" space="false" decode="false">{{read_rate}}</text> 同龄人
+          <text class="other" selectable="false" space="false" decode="false">{{read_rate}}</text>
+          同龄人
         </view>
       </view>
     </view>
@@ -88,7 +90,7 @@
     <!-- <view class="title_scope" hover-class="none" hover-stop-propagation="false">换一批</view> -->
   </view>
   <view class="book_list" hover-class="none" hover-stop-propagation="false">
-    <view class="item" hover-class="none" hover-stop-propagation="false" wx:for="{{book_fr}}" wx:for-index="index" wx:for-item="item">
+    <view class="item" hover-class="none" hover-stop-propagation="false" wx:for="{{book_fr}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
       <image class="item_val" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       <view class="item_res" hover-class="none" hover-stop-propagation="false">
         <view class="res_title" hover-class="none" hover-stop-propagation="false">
@@ -110,14 +112,14 @@
     </view>
   </view>
   <view class="seach_tab" hover-class="none" hover-stop-propagation="false">
-    <view class="tab_item {{tab_index==index?'tab_item_active':''}}" bind:tap="select" data-index='{{index}}' hover-class="none" hover-stop-propagation="false" wx:for="{{tab}}" wx:for-item="item" wx:for-index="index">
+    <view class="tab_item {{tab_index==index?'tab_item_active':''}}" bind:tap="select" data-index='{{index}}' hover-class="none" hover-stop-propagation="false" wx:for="{{tab}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       {{item.label}}
     </view>
   </view>
 </view>
 <!-- 详情组件 -->
 <view class="mess_list" hover-class="none" hover-stop-propagation="false">
-  <view class="mess_head" hover-class="none" hover-stop-propagation="false" wx:for="{{friendList}}" wx:for-item="item" wx:for-index="index">
+  <view class="mess_head" hover-class="none" hover-stop-propagation="false" wx:for="{{friendList}}" wx:key="{{index}}" wx:for-item="item" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
     <image class="mess_val" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
     <view class="mess_detail" hover-class="none" hover-stop-propagation="false">
       <view class="detail_info" hover-class="none" hover-stop-propagation="false">
@@ -126,7 +128,8 @@
           <text class="age" hover-class="none" hover-stop-propagation="false">{{item.age}}岁</text>
           <view class="read_res">
             已阅读
-            <text class="res_number">{{item.read_number}}</text> 本
+            <text class="res_number">{{item.read_number}}</text>
+            本
           </view>
         </view>
         <view class="detail_info_time" hover-class="none" hover-stop-propagation="false">
@@ -138,7 +141,7 @@
           {{item.content}}
         </view>
         <view class="img_group" hover-class="none" hover-stop-propagation="false">
-          <image class="img_list" src="{{imgitem}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" wx:for="{{item.img_list}}" wx:for-index="imgindex" wx:for-item="imgitem"></image>
+          <image class="img_list" src="{{imgitem}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" wx:for="{{item.img_list}}" wx:for-index="imgindex" wx:key="{{index}}" wx:for-item="imgitem"></image>
         </view>
       </view>
     </view>

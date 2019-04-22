@@ -8,7 +8,7 @@
 </view>
 <!-- 筛选组件 -->
 <view class="pick_group" hover-class="none" hover-stop-propagation="false">
-  <block wx:for="{{navtab_list}}" wx:for-index="index" wx:for-item="item">
+  <block wx:for="{{navtab_list}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
     <view class="pick_item {{index==navtab_list_index?'tab_item_active':''}}" bind:tap="select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false">
       {{item.label}}
       <text class='iconfont icon-arrLeft-fill'></text>
@@ -62,10 +62,12 @@
   </view>
 </view>
 <view class="wrap" hover-class="none" hover-stop-propagation="false" style="width:100%;height:{{wrap_height}}px" wx:if="{{mask}}" bindtap='hide_mask'>
-  <view class="wrap_item {{item.checked?'wrap_item_active':''}}" catchtap="wrap_select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{navtab_list[navtab_list_index].list}}" wx:for-item="item" wx:for-index="index">
+  <view class="wrap_item {{item.checked?'wrap_item_active':''}}" catchtap="wrap_select" data-index="{{index}}" hover-class="none" hover-stop-propagation="false" wx:for="{{navtab_list[navtab_list_index].list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
     {{item.label}}
     <text class="iconfont  icon-gou" selectable="false" space="false" decode="false" wx:if="{{item.checked}}"></text>
   </view>
 </view>
 <!-- 固定导航 -->
-<view class="flxed_nav" hover-class="none" hover-stop-propagation="false" bindtap='to_creat'>创建书单</view>
+<view class="flxed_nav" hover-class="none" hover-stop-propagation="false" bindtap='to_creat'>
+  创建书单
+</view>

@@ -8,7 +8,7 @@
 <!-- 轮播图组件 -->
 <view class='banner'>
   <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}">
       <swiper-item>
         <image class="slide-image" src="{{item}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       </swiper-item>
@@ -17,7 +17,7 @@
 </view>
 <!-- tab组件 -->
 <view class="tab_group" hover-class="none" hover-stop-propagation="false">
-  <block wx:for="{{tabList}}" wx:for-item="item">
+  <block wx:for="{{tabList}}" wx:key="{{index}}" wx:for-item="item">
     <view class="tab_item" hover-class="none" hover-stop-propagation="false" bindtap='go_tab' data-index='{{index}}'>
       <image class="tab_banner" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload=""></image>
       <text class="tab_title" selectable="false" space="false" decode="false">{{item.title}}</text>
@@ -51,7 +51,7 @@
     <text class="title" selectable="false" space="false" decode="false">点读专区</text>
   </view>
   <view class="reading_group" hover-class="none" hover-stop-propagation="false">
-    <view class="read_item" hover-class="none" hover-stop-propagation="false" wx:for="{{readlist}}" wx:for-item="item" wx:for-index="index">
+    <view class="read_item" hover-class="none" hover-stop-propagation="false" wx:for="{{readlist}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="read_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <view class="read_item_more" hover-class="none" hover-stop-propagation="false">
         {{item.title}}
@@ -67,7 +67,7 @@
     <view class="more" hover-class="none" hover-stop-propagation="false">更多</view>
   </view>
   <view class="Age_group" hover-class="none" hover-stop-propagation="false">
-    <view class="age_group_item" hover-class="none" hover-stop-propagation="false" wx:for="{{age_list}}" wx:for-item="item" wx:for-index="index" style="background:{{item.bg_color}}">
+    <view class="age_group_item" hover-class="none" hover-stop-propagation="false" wx:for="{{age_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index" style="background:{{item.bg_color}}">
       {{item.title}}
     </view>
   </view>
@@ -82,7 +82,7 @@
     </view>
   </view>
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
-    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{characters}}" wx:for-index="index" wx:for-item="item">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{characters}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
       <image class="special_item_logo br50" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <text class="special_item_title" selectable="false" space="false" decode="false">
         {{item.title}}
@@ -100,7 +100,7 @@
     </view>
   </view>
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
-    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{special_characters}}" wx:for-item="item" wx:for-index="index">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{special_characters}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="special_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <text class="special_item_title" selectable="false" space="false" decode="false">
         {{item.title}}
@@ -118,7 +118,7 @@
     </view>
   </view>
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
-    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{famous_list}}" wx:for-item="item" wx:for-index="index">
+    <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{famous_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="special_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <text class="special_item_title" selectable="false" space="false" decode="false">
         {{item.title}}
@@ -136,7 +136,7 @@
     </view>
   </view>
   <view class="book_group" hover-class="none" hover-stop-propagation="false">
-    <view class="book_item" hover-class="none" hover-stop-propagation="false" wx:for="{{famous_book}}" wx:for-index="index" wx:for-item="item">
+    <view class="book_item" hover-class="none" hover-stop-propagation="false" wx:for="{{famous_book}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
       <image class="book_item_logo br50" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <view class="book_item_res" hover-class="none" hover-stop-propagation="false">
         <view class="book_title" selectable="false" space="false" decode="false">
@@ -160,7 +160,7 @@
     </view>
   </view>
   <view class="reading_group" hover-class="none" hover-stop-propagation="false">
-    <view class="read_item" hover-class="none" hover-stop-propagation="false" wx:for="{{gold_list}}" wx:for-item="item" wx:for-index="index">
+    <view class="read_item" hover-class="none" hover-stop-propagation="false" wx:for="{{gold_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="read_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <view class="read_item_more" hover-class="none" hover-stop-propagation="false">
         更多
@@ -178,13 +178,15 @@
     </view>
   </view>
   <view class="hot_group" hover-class="none" hover-stop-propagation="false">
-    <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:for-item="item" bindtap='to_detail'>
+    <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item" bindtap='to_detail'>
       <image class="hot_list_logo" src="{{item.src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
       <view class="hot_list_res" hover-class="none" hover-stop-propagation="false">
         {{item.title}}
       </view>
       <view class="hot_list_label" hover-class="none" hover-stop-propagation="false">
-        <text class="label" wx:for="{{item.tab}}" wx:for-item="ditem" wx:for-index="dindex">{{ditem}}</text>
+        <text class="label" wx:for="{{item.tab}}" wx:key="{{index}}" wx:for-item="ditem" wx:for-index="dindex">
+          {{ditem}}
+        </text>
         <image class="icon" src="/images/favar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
     </view>
