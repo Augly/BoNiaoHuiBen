@@ -5,6 +5,7 @@ Page({
    */
   data: {
     all:false,
+    n:0,
     list: [
       {
         src: '/images/20190419114145.jpg',
@@ -40,7 +41,8 @@ Page({
       })
     }
     this.setData({
-      list: _arr
+      list: _arr,
+      n: s_n
     })
   },
   all_select(){
@@ -52,7 +54,8 @@ Page({
     });
     this.setData({
       all:_a,
-      list: _arr
+      list: _arr,
+      n: _a?_arr.length:0
     })
   },
   /**

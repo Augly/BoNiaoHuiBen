@@ -27,6 +27,6 @@
 <view class="all_select" hover-class="none" hover-stop-propagation="false">
   <text class="iconfont {{all?'icon-xuanze':'icon-unxuanze'}}" selectable="false" space="false" decode="false" bindtap='all_select'></text>
   <text class="title" selectable="false" space="false" decode="false">全选</text>
-  <text class="number" selectable="false" space="false" decode="false">已选：0件</text>
+  <text class="number" selectable="false" space="false" decode="false">已选：{{n}}件</text>
   <view class="sure" hover-class="none" hover-stop-propagation="false">借阅</view>
 </view>

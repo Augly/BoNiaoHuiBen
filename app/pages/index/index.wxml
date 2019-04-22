@@ -184,9 +184,7 @@
         {{item.title}}
       </view>
       <view class="hot_list_label" hover-class="none" hover-stop-propagation="false">
-        <text class="label" wx:for="{{item.tab}}" wx:key="{{index}}" wx:for-item="ditem" wx:for-index="dindex">
-          {{ditem}}
-        </text>
+        <text class="label" wx:for="{{item.tab}}" wx:key="{{index}}" wx:for-item="ditem" wx:for-index="dindex">{{ditem}}</text>
         <image class="icon" src="/images/favar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
       </view>
     </view>

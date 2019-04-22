@@ -1,4 +1,5 @@
 // pages/demo/demo.js
+const config=require('../../utils/util.js')
 Page({
   /**
    * 页面的初始数据
@@ -88,6 +89,9 @@ Page({
     this.setData({
       isShow: !this.data.isShow
     })
+  },
+  gz(){
+    config.mytoast('关注')
   },
   select(e) {
     console.log(e.currentTarget.dataset.index)

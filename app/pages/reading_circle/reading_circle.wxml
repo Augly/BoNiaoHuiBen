@@ -97,7 +97,7 @@
           {{item.tel}}
         </view>
         <view class="res_sex" hover-class="none" hover-stop-propagation="false">{{item.age}}岁</view>
-        <view class="res_button" hover-class="none" hover-stop-propagation="false">+关注</view>
+        <view class="res_button" hover-class="none" hover-stop-propagation="false" bindtap='gz'>+关注</view>
       </view>
     </view>
   </view>
