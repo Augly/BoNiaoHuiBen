@@ -24,12 +24,12 @@ Page({
 
     //热门推荐
     hot_list: [{
-        src: '/images/gold2.png',
+      src: '/images/book1.jpg',
         title: '吴敏兰',
         tab: ['0-3岁', '科普百科']
       },
       {
-        src: '/images/gold2.png',
+        src: '/images/book1.jpg',
         title: '吴敏兰',
         tab: ['0-3岁', '科普百科']
       }
@@ -66,7 +66,11 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {},
+  onLoad: function (options) {
+    wx.setNavigationBarTitle({
+      title: options.title,
+    })
+  },
   //切换选项
   select_tab(e) {
     this.setData({

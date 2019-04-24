@@ -84,9 +84,7 @@
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
     <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{characters}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
       <image class="special_item_logo br50" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
-      <text class="special_item_title" selectable="false" space="false" decode="false">
-        {{item.title}}
-      </text>
+      <text class="special_item_title" selectable="false" space="false" decode="false">{{item.title}}</text>
     </view>
   </view>
 </view>
@@ -102,9 +100,7 @@
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
     <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{special_characters}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="special_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
-      <text class="special_item_title" selectable="false" space="false" decode="false">
-        {{item.title}}
-      </text>
+      <text class="special_item_title" selectable="false" space="false" decode="false">{{item.title}}</text>
     </view>
   </view>
 </view>
@@ -120,9 +116,7 @@
   <view class="special_group" hover-class="none" hover-stop-propagation="false">
     <view class="special_item" hover-class="none" hover-stop-propagation="false" wx:for="{{famous_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="special_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
-      <text class="special_item_title" selectable="false" space="false" decode="false">
-        {{item.title}}
-      </text>
+      <text class="special_item_title" selectable="false" space="false" decode="false">{{item.title}}</text>
     </view>
   </view>
 </view>
@@ -163,7 +157,7 @@
     <view class="read_item" hover-class="none" hover-stop-propagation="false" wx:for="{{gold_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">
       <image class="read_item_logo" src="{{item.src}}" mode="scaleToFill" lazy-load="false" binderror="" bindload="" />
       <view class="read_item_more" hover-class="none" hover-stop-propagation="false">
-        更多
+        {{item.title}}
         <text class="iconfont icon-arr-right-red" selectable="false" space="false" decode="false"></text>
       </view>
     </view>

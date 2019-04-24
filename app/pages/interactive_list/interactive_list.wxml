@@ -18,8 +18,12 @@
 </view>
 <view class="list_wrap" hover-class="none" hover-stop-propagation="false">
   <view class="list" hover-class="none" hover-stop-propagation="false" bindtap='to_detail'>
-    <!-- <view class="list_logo_group" hover-class="none" hover-stop-propagation="false"></view> -->
-    <image class="list_logo_group" src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false">
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
     <view class="list_detail" hover-class="none" hover-stop-propagation="false">
       <view class="list_title" hover-class="none" hover-stop-propagation="false">
         经典英语启蒙系列之——大卫不可以
@@ -40,7 +44,12 @@
     </view>
   </view>
   <view class="list" hover-class="none" hover-stop-propagation="false" bindtap='to_detail'>
-    <image class="list_logo_group" src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    <view class="list_logo_group" hover-class="none" hover-stop-propagation="false">
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+      <image src="/images/20190419114145.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+    </view>
     <view class="list_detail" hover-class="none" hover-stop-propagation="false">
       <view class="list_title" hover-class="none" hover-stop-propagation="false">
         经典英语启蒙系列之——大卫不可以
@@ -68,6 +77,7 @@
   </view>
 </view>
 <!-- 固定导航 -->
-<view class="flxed_nav" hover-class="none" hover-stop-propagation="false" bindtap='to_creat'>
+<!-- <view class="flxed_nav" hover-class="none" hover-stop-propagation="false" bindtap='to_creat'>
   创建书单
-</view>
+</view> -->
+<image class="flxed_nav" src="../../images/creat.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>

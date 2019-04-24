@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isShow: true,
+    isShow: false,
     val: '/images/gold2.png', //头像
     name: '宝贝书屋', //名称
     j_number: 0,

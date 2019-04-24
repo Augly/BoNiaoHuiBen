@@ -8,22 +8,16 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-;
+};
 
 @box: {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-;
+};
 
 @bor_20: {
   border-top: 20rpx solid RGBA(240, 242, 245, 1);
-}
-
-;
+};
 
 .marT20 {
   margin-top: 20rpx;
@@ -139,10 +133,10 @@
   }
 
   .tab_item_active {
-    color: #448ACA;
+    color: #448aca;
 
     .icon-arrLeft-fill {
-      color: #448ACA;
+      color: #448aca;
       font-size: 24rpx;
       margin-left: 10rpx;
     }
@@ -177,7 +171,13 @@
 
     .list_logo_group {
       .wh(210rpx);
-
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      image {
+        .wh(100rpx);
+      }
     }
 
     .list_detail {
@@ -262,7 +262,7 @@
   right: 14rpx;
   bottom: 14rpx;
   @box();
-  padding: 20rpx;
+  // padding: 20rpx;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

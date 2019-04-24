@@ -34,6 +34,7 @@
     </view>
   </view>
   <view class="line" hover-class="none" hover-stop-propagation="false"></view>
+  <view class='head_mywrap'>
   <view class="head_user" hover-class="none" hover-stop-propagation="false">
     <view class="head_user_title" hover-class="none" hover-stop-propagation="false">宝贝阅读</view>
     <view class="head_user_group" hover-class="none" hover-stop-propagation="false">
@@ -74,6 +75,8 @@
     </view>
   </view>
   <view class="recle" hover-class="none" hover-stop-propagation="false">记录</view>
+  </view>
+  
 </view>
 <view class="calendar_wrap">
   <view class="title" hover-class="none" hover-stop-propagation="false">阅读日历</view>

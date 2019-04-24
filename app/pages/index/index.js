@@ -52,68 +52,68 @@ Page({
     //点读专区
     readlist: [
       {
-        src: '/images/gold2.png',
+        src: '/images/pencli.jpg',
         title: '毛毛虫'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/pencli2.jpg',
+        title: '小达人'
       }
     ],
 
     //特色人物专区
     characters: [
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/b1.jpg',
+        title: '小猪佩奇'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/b2.jpg',
+        title: '小鼠波波'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/b3.jpg',
+        title: '小玻'
       }
     ],
     //名家大师
     special_characters: [
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/p1.jpg',
+        title: '艾瑞·卡尔'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/p2.jpg',
+        title: '安东尼·布朗'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/p3.jpg',
+        title: '李欧·李奥尼'
       }
     ],
     //名品馆
     famous_list: [
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/a1.jpg',
+        title: '读小库'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/a2.jpg',
+        title: '蒲蒲兰'
       },
       {
-        src: '/images/gold2.png',
-        title: '毛毛虫'
+        src: '/images/a3.jpg',
+        title: '李欧·李奥尼'
       }
     ],
     //名人书单
     famous_book: [
       {
-        src: '/images/gold2.png',
+        src: '/images/20190419114145.jpg',
         title: '吴敏兰'
       },
       {
-        src: '/images/gold2.png',
+        src: '/images/20190419114145.jpg',
         title: '吴敏兰'
       }
     ],
@@ -121,22 +121,40 @@ Page({
     gold_list: [
       {
         src: '/images/gold2.png',
-        title: '吴敏兰'
+        title: '凯迪克金奖'
       },
       {
-        src: '/images/gold2.png',
-        title: '吴敏兰'
+        src: '/images/gold3.png',
+        title: '凯迪克银奖'
+      },
+      {
+        src: '/images/gold.png',
+        title: '德国绘本奖'
+      },
+      {
+        src: '/images/gold1.png',
+        title: '格林纳威奖'
       }
     ],
     //热门推荐
     hot_list: [
       {
-        src: '/images/gold2.png',
+        src: '/images/book1.jpg',
         title: '吴敏兰',
         tab: ['0-3岁', '科普百科']
       },
       {
-        src: '/images/gold2.png',
+        src: '/images/book1.jpg',
+        title: '吴敏兰',
+        tab: ['0-3岁', '科普百科']
+      },
+      {
+        src: '/images/book1.jpg',
+        title: '吴敏兰',
+        tab: ['0-3岁', '科普百科']
+      },
+      {
+        src: '/images/book1.jpg',
         title: '吴敏兰',
         tab: ['0-3岁', '科普百科']
       }
@@ -188,7 +206,7 @@ Page({
   //去搜索
   to_seach(){
     wx.navigateTo({
-      url: '/pages/seach/seach',
+      url: '/pages/seach/seach?title=搜索',
       success: function(res) {},
       fail: function(res) {},
       complete: function(res) {},
@@ -203,7 +221,43 @@ Page({
         fail: function(res) {},
         complete: function(res) {},
       })
-  }
+    } else if (e.currentTarget.dataset.index == 3){
+      wx.navigateTo({
+        url: '/pages/membership_plan/membership_plan',
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+    } else if (e.currentTarget.dataset.index == 1) {
+      wx.navigateTo({
+        url: '/pages/seach/seach?title=系列',
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+    } else if (e.currentTarget.dataset.index == 4) {
+      wx.navigateTo({
+        url: '/pages/seach/seach?title=儿童玩具',
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+    } else if (e.currentTarget.dataset.index == 5) {
+      wx.navigateTo({
+        url: '/pages/seach/seach?title=新书上架',
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+    } else if (e.currentTarget.dataset.index == 7) {
+      wx.navigateTo({
+        url: '/pages/seach/seach?title=英文原版',
+        success: function (res) { },
+        fail: function (res) { },
+        complete: function (res) { },
+      })
+    }
+   
   },
   /**
    * 生命周期函数--监听页面加载
