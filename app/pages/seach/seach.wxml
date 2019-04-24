@@ -15,7 +15,7 @@
   <view class="tab_item {{index==tab_index?'tab_item_active':''}}" hover-class="none" bind:tap="select_tab" data-index="{{index}}" hover-stop-propagation="false" wx:for="{{tab_list}}" wx:key="{{index}}" wx:for-item="item" wx:for-index="index">{{item.label}}</view>
 </view>
 <view class="hot_group" hover-class="none" hover-stop-propagation="false">
-  <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item">
+  <view class="hot_list" hover-class="none" hover-stop-propagation="false" wx:for="{{hot_list}}" wx:for-index="index" wx:key="{{index}}" wx:for-item="item" bindtap='to_res'>
     <view class="hot_list_logo" hover-class="none" hover-stop-propagation="false">
       <image class="hot_list_logo" src="{{item.src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
       <view class="bt_bard" hover-class="none" hover-stop-propagation="false">已借完</view>
